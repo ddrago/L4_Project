@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable", "Bose.Wearable.csproj", "{8E2CC326-B200-5D79-D48E-AB4224693C41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{F0389D9E-2A91-430A-0224-E0F3E98C41C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable.Editor", "Bose.Wearable.Editor.csproj", "{8C0C3FF7-5A0F-1370-2522-EBFCE1B7364A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable.Shared.Editor", "Bose.Wearable.Shared.Editor.csproj", "{516F6CCF-7CBA-EE76-59C0-97A9983F9557}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable.Debugging.Editor", "Bose.Wearable.Debugging.Editor.csproj", "{F234D4FF-7C15-E6EE-11FB-7CB42A472DDA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable.Examples.Editor", "Bose.Wearable.Examples.Editor.csproj", "{8D7B8454-3058-51FB-2B3F-584E9F777064}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bose.Wearable.Connection.Editor", "Bose.Wearable.Connection.Editor.csproj", "{8D858047-4DD2-8607-C853-FCA9CDBA7F6D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8E2CC326-B200-5D79-D48E-AB4224693C41}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8E2CC326-B200-5D79-D48E-AB4224693C41}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8E2CC326-B200-5D79-D48E-AB4224693C41}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8E2CC326-B200-5D79-D48E-AB4224693C41}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0389D9E-2A91-430A-0224-E0F3E98C41C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0389D9E-2A91-430A-0224-E0F3E98C41C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0389D9E-2A91-430A-0224-E0F3E98C41C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0389D9E-2A91-430A-0224-E0F3E98C41C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C0C3FF7-5A0F-1370-2522-EBFCE1B7364A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C0C3FF7-5A0F-1370-2522-EBFCE1B7364A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C0C3FF7-5A0F-1370-2522-EBFCE1B7364A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C0C3FF7-5A0F-1370-2522-EBFCE1B7364A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{516F6CCF-7CBA-EE76-59C0-97A9983F9557}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{516F6CCF-7CBA-EE76-59C0-97A9983F9557}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{516F6CCF-7CBA-EE76-59C0-97A9983F9557}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{516F6CCF-7CBA-EE76-59C0-97A9983F9557}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F234D4FF-7C15-E6EE-11FB-7CB42A472DDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F234D4FF-7C15-E6EE-11FB-7CB42A472DDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F234D4FF-7C15-E6EE-11FB-7CB42A472DDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F234D4FF-7C15-E6EE-11FB-7CB42A472DDA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D7B8454-3058-51FB-2B3F-584E9F777064}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D7B8454-3058-51FB-2B3F-584E9F777064}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D7B8454-3058-51FB-2B3F-584E9F777064}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D7B8454-3058-51FB-2B3F-584E9F777064}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8D858047-4DD2-8607-C853-FCA9CDBA7F6D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8D858047-4DD2-8607-C853-FCA9CDBA7F6D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8D858047-4DD2-8607-C853-FCA9CDBA7F6D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8D858047-4DD2-8607-C853-FCA9CDBA7F6D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
