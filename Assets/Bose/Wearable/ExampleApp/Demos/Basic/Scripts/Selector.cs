@@ -4,17 +4,21 @@ using UnityEngine;
 
 public class Selector : MonoBehaviour
 {
+
+    [SerializeField]
     private static Ray _ray;
+
     private static RaycastHit _hitInfo;
 
-    public void test_answer()
+    public static void Test_answer()
     {
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
-            Debug.Log("test 1");
-        } else
+            Debug.Log("I'm seeing something!");
+        }
+        else
         {
-            Debug.Log(_ray);
+            Debug.Log("Oh no! I'm nodding at nothing!");
         }
     }
 
@@ -23,7 +27,7 @@ public class Selector : MonoBehaviour
     {
         Ray ray = new Ray(transform.position, transform.forward);
         _ray = ray;
-        
+
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
             Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);

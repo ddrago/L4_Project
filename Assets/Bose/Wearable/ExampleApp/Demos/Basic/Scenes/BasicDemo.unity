@@ -275,12 +275,24 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.94
+      value: -0.7
       objectReference: {fileID: 0}
     - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 8
+      value: 29.7
       objectReference: {fileID: 0}
     - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -313,10 +325,6 @@ PrefabInstance:
     - target: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 0}
-      propertyPath: _onGestureDetected.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: test_answer
       objectReference: {fileID: 0}
     - target: {fileID: 7349211355736870586, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
       propertyPath: m_Name
@@ -388,6 +396,7 @@ GameObject:
   - component: {fileID: 1250345755}
   - component: {fileID: 1250345754}
   - component: {fileID: 1250345758}
+  - component: {fileID: 1250345759}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -480,6 +489,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e349fac1b5073294cbc6b1c7c4eee15f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1250345759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1250345753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cbba9a9b2c0a946c798f8046ea7072b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _gesture: 130
+  _onGestureDetected:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1250345758}
+        m_TargetAssemblyTypeName: Selector, Bose.Wearable
+        m_MethodName: Test_answer
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1001 &1473396530
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -598,8 +635,6 @@ GameObject:
   - component: {fileID: 1477717641}
   - component: {fileID: 1477717640}
   - component: {fileID: 1477717639}
-  - component: {fileID: 1477717643}
-  - component: {fileID: 1477717642}
   m_Layer: 0
   m_Name: Item2
   m_TagString: Untagged
@@ -615,8 +650,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477717637}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.92, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 17.9, y: -21.6, z: -13.1}
+  m_LocalScale: {x: 15, y: 15, z: 5}
   m_Children: []
   m_Father: {fileID: 776637977}
   m_RootOrder: 1
@@ -683,46 +718,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1477717637}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1477717642
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477717637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e349fac1b5073294cbc6b1c7c4eee15f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1477717643
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1477717637}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbba9a9b2c0a946c798f8046ea7072b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gesture: 130
-  _onGestureDetected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1477717642}
-        m_TargetAssemblyTypeName: Selector, Bose.Wearable
-        m_MethodName: test_answer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!1 &1519196220
 GameObject:
   m_ObjectHideFlags: 0
@@ -735,8 +730,6 @@ GameObject:
   - component: {fileID: 1519196224}
   - component: {fileID: 1519196223}
   - component: {fileID: 1519196222}
-  - component: {fileID: 1519196226}
-  - component: {fileID: 1519196225}
   m_Layer: 0
   m_Name: Item1
   m_TagString: Untagged
@@ -752,8 +745,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519196220}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.78, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -9.9, y: -21.3, z: -13.099998}
+  m_LocalScale: {x: 15, y: 15, z: 5}
   m_Children: []
   m_Father: {fileID: 776637977}
   m_RootOrder: 0
@@ -820,43 +813,3 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519196220}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &1519196225
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519196220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e349fac1b5073294cbc6b1c7c4eee15f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &1519196226
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519196220}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cbba9a9b2c0a946c798f8046ea7072b3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  _gesture: 130
-  _onGestureDetected:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1519196225}
-        m_TargetAssemblyTypeName: Selector, Bose.Wearable
-        m_MethodName: test_answer
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
