@@ -23,6 +23,7 @@ public class Selector : MonoBehaviour
 
             } else if (objectName == "Item2")
             {
+                FindObjectOfType<AudioManager>().Play("MenuButtonPress");
                 Debug.Log(_hitInfo.collider.gameObject.name);
 
             } else
