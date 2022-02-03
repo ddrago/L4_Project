@@ -14,7 +14,7 @@ public class Selector : MonoBehaviour
     {
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
-            Debug.Log("I'm seeing something!");
+            Debug.Log(_hitInfo.collider.gameObject.name);
         }
         else
         {
