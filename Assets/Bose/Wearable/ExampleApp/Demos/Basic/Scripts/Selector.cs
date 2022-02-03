@@ -14,7 +14,17 @@ public class Selector : MonoBehaviour
     {
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
-            Debug.Log(_hitInfo.collider.gameObject.name);
+            string objectName = _hitInfo.collider.gameObject.name;
+            if (objectName == "Item1")
+            {
+                Debug.Log(_hitInfo.collider.gameObject.name);
+            } else if (objectName == "Item2")
+            {
+                Debug.Log(_hitInfo.collider.gameObject.name);
+            } else
+            {
+                Debug.Log("New phone, who dis");
+            }
         }
         else
         {
