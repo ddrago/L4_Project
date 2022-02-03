@@ -17,10 +17,14 @@ public class Selector : MonoBehaviour
             string objectName = _hitInfo.collider.gameObject.name;
             if (objectName == "Item1")
             {
+
+                FindObjectOfType<AudioManager>().Play("MenuButtonPress");
                 Debug.Log(_hitInfo.collider.gameObject.name);
+
             } else if (objectName == "Item2")
             {
                 Debug.Log(_hitInfo.collider.gameObject.name);
+
             } else
             {
                 Debug.Log("New phone, who dis");

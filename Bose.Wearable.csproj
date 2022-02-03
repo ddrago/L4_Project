@@ -170,6 +170,7 @@
     <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Advanced\Scripts\TargetController.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\OSPermissionExtensions.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Debugging\Scripts\UI\GestureDebugUIWindow.cs" />
+    <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Basic\Scripts\Selector.cs" />
     <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Advanced\Scripts\MouseButtonRecognizer.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\DeviceStatusFlags.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Shared\Scripts\Engine\AudioControl.cs" />
@@ -197,7 +198,8 @@
     <Compile Include="Assets\Bose\Wearable\Scripts\Requirements\WearableRequirement.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\ConnectionStatus.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\ProductId.cs" />
-    <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Basic\Scripts\Selector.cs" />
+    <Compile Include="Assets\Bose\Wearable\Scripts\AudioManager.cs" />
+    <Compile Include="Assets\Bose\Wearable\Scripts\Sound.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Bose\Wearable\Modules\Debugging\Fonts\Nova_Mono\OFL.txt" />
@@ -445,6 +447,9 @@
     <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
       <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
     </Reference>
+    <Reference Include="log4netPlastic">
+      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
+    </Reference>
     <Reference Include="Bose.Editor.Tools">
       <HintPath>Assets\Bose\Tools\Editor\Bose.Editor.Tools.dll</HintPath>
     </Reference>
@@ -453,9 +458,6 @@
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
-    </Reference>
-    <Reference Include="log4netPlastic">
-      <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="unityplastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.9.0\Lib\Editor\PlasticSCM\unityplastic.dll</HintPath>
