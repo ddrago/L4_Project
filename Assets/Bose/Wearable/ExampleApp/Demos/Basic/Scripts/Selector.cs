@@ -10,7 +10,7 @@ public class Selector : MonoBehaviour
 
     private static RaycastHit _hitInfo;
 
-    public static void Test_answer()
+    public static void Press()
     {
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {

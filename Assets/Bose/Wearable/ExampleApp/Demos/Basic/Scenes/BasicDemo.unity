@@ -507,7 +507,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1250345758}
         m_TargetAssemblyTypeName: Selector, Bose.Wearable
-        m_MethodName: Test_answer
+        m_MethodName: Press
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
