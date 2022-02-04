@@ -9,6 +9,7 @@ public class Selector : MonoBehaviour
     private static Ray _ray;
 
     private static RaycastHit _hitInfo;
+    private static bool _firstContact;
 
     public static void Press()
     {
@@ -37,6 +38,11 @@ public class Selector : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        _firstContact = true;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -46,10 +52,16 @@ public class Selector : MonoBehaviour
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
             Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);
+            if (_firstContact)
+            {
+                FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
+                _firstContact = false;
+            }
         }
         else
         {
             Debug.DrawLine(_ray.origin, _ray.origin + _ray.direction * 100, Color.red);
+            _firstContact = true;
         }
     }
 }
