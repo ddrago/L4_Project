@@ -28,7 +28,7 @@ public class AudioManager : MonoBehaviour
             Debug.LogWarning("Sound file " + name + " not found!");
             return;
         }
-        Debug.Log("Now playing: " + s.name);
+        //Debug.Log("Now playing: " + s.name);
         s.source.Play();
     }
 }

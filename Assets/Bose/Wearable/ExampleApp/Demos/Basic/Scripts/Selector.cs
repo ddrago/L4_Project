@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+
+using System.IO;
+using UnityEngine;
 
 public class Selector : MonoBehaviour
 {
@@ -20,12 +24,16 @@ public class Selector : MonoBehaviour
             {
 
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                Debug.Log(_hitInfo.collider.gameObject.name);
+                //Debug.Log(_hitInfo.collider.gameObject.name);
+                //Debug.Log(DateTime.Now);
+                WriteString(DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
 
             } else if (objectName == "Item2")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                Debug.Log(_hitInfo.collider.gameObject.name);
+                //Debug.Log(_hitInfo.collider.gameObject.name);
+                //Debug.Log(DateTime.Now);
+                WriteString(DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
 
             } else
             {
@@ -36,6 +44,19 @@ public class Selector : MonoBehaviour
         {
             Debug.Log("Oh no! I'm nodding at nothing!");
         }
+    }
+
+    public static void WriteString(string log)
+    {
+        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/test.txt";
+        //Write some text to the test.txt file
+        StreamWriter writer = new StreamWriter(path, true);
+        writer.WriteLine(log);
+        writer.Close();
+        StreamReader reader = new StreamReader(path);
+        //Print the text from the file
+        Debug.Log(reader.ReadToEnd());
+        reader.Close();
     }
 
     private void Awake()
