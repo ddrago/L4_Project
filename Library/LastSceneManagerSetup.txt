@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity
+- path: Assets/Bose/Wearable/ExampleApp/Scenes/Root.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
