@@ -24,25 +24,28 @@ public class Selector : MonoBehaviour
             {
 
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                //Debug.Log(_hitInfo.collider.gameObject.name);
-                //Debug.Log(DateTime.Now);
-                WriteString(DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.UtcNow.Millisecond.ToString(), _hitInfo.collider.gameObject.name);
+
+                //WriteString("[PRESS] " + DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
 
             } else if (objectName == "Item2")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                //Debug.Log(_hitInfo.collider.gameObject.name);
-                //Debug.Log(DateTime.Now);
-                WriteString(DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.UtcNow.Millisecond.ToString(), _hitInfo.collider.gameObject.name);
 
-            } else
+                //WriteString("[PRESS] " + DateTime.Now + ": " + _hitInfo.collider.gameObject.name);
+
+            }
+            else
             {
-                Debug.Log("New phone, who dis");
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.UtcNow.Millisecond.ToString(), "N/A");
+                //WriteString("[VOID PRESS] " + DateTime.Now);
             }
         }
         else
         {
-            Debug.Log("Oh no! I'm nodding at nothing!");
+            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.UtcNow.Millisecond.ToString(), "N/A");
+            //WriteString("[VOID PRESS] " + DateTime.Now);
         }
     }
 
@@ -59,9 +62,29 @@ public class Selector : MonoBehaviour
         reader.Close();
     }
 
+    public static void LogOnCSV(string interactionType, string time, string timeMS, string item)
+    {
+        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
+        StreamWriter writer = new StreamWriter(path, append: true);
+
+        writer.WriteLine(interactionType + "," + time + "," + timeMS + "," + item);
+        //writer.Flush();
+        writer.Close();
+    }
+
     private void Awake()
     {
         _firstContact = true;
+
+        // Set up the csv file. This should only be done once per file. However, if the file already exists, the code below
+        // will just print onto it a new line. 
+        // TODO: check the names of all the files that starts with "log" and iterate until you find an available name
+        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
+        StreamWriter writer = new StreamWriter(path);
+        writer.WriteLine("InteractionType,Time,TimeMS,Item");
+        writer.WriteLine("[START]" + "," + DateTime.Now.ToString() + "," + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond).ToString() + "," + "N/A");
+        //writer.Flush();
+        writer.Close();
     }
 
     // Update is called once per frame
@@ -76,6 +99,7 @@ public class Selector : MonoBehaviour
             if (_firstContact)
             {
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
+                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), (DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond).ToString(), _hitInfo.collider.gameObject.name);
                 _firstContact = false;
             }
         }
