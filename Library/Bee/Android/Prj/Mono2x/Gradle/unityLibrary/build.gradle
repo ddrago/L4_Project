@@ -1,0 +1,58 @@
+apply plugin: 'com.android.library'
+
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation(name: 'appcompat-1.1.0', ext:'aar')
+    implementation(name: 'preference-1.1.0', ext:'aar')
+    implementation(name: 'localbroadcastmanager-1.0.0', ext:'aar')
+    implementation(name: 'legacy-support-core-utils-1.0.0', ext:'aar')
+    implementation(name: 'play-services-basement-17.0.0', ext:'aar')
+    implementation(name: 'play-services-tasks-17.0.0', ext:'aar')
+    implementation(name: 'core-runtime-2.0.0', ext:'aar')
+    implementation(name: 'legacy-support-core-ui-1.0.0', ext:'aar')
+    implementation(name: 'bosewearable', ext:'aar')
+    implementation(name: 'blecore', ext:'aar')
+    implementation(name: 'BoseWearableBridge', ext:'aar')
+    implementation(name: 'appcompat-resources-1.1.0', ext:'aar')
+    implementation(name: 'lifecycle-livedata-core-2.0.0', ext:'aar')
+    implementation(name: 'core-1.1.0', ext:'aar')
+
+}
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion '30.0.2'
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion 22
+        targetSdkVersion 29
+        ndk {
+            abiFilters 'armeabi-v7a'
+        }
+        versionCode 1
+        versionName '0.1'
+        consumerProguardFiles 'proguard-unity.txt'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    aaptOptions {
+        noCompress = ['.unity3d', '.ress', '.resource', '.obb', '.unityexp'] + unityStreamingAssets.tokenize(', ')
+        ignoreAssetsPattern = "!.svn:!.git:!.ds_store:!*.scc:.*:!CVS:!thumbs.db:!picasa.ini:!*~"
+    }
+
+    packagingOptions {
+        doNotStrip '*/armeabi-v7a/*.so'
+    }
+}
+
+
+

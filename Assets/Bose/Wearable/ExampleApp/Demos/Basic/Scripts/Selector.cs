@@ -31,6 +31,7 @@ public class Selector : MonoBehaviour
             }
             else
             {
+                
                 LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
             }
         }
@@ -87,8 +88,13 @@ public class Selector : MonoBehaviour
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
             Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);
+
             if (_firstContact)
             {
+                // Get the renderer of the object hit by the raycasting
+                Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
+                target_renderer.material.color = new Color(0, 255, 0);
+
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
                 _firstContact = false;

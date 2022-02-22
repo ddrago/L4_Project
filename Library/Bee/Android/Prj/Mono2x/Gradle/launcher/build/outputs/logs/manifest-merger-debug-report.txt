@@ -1,0 +1,254 @@
+-- Merging decision tree log ---
+manifest
+ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+MERGED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-72:12
+MERGED from [:appcompat-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:preference-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\2a643b4e2b4f2354ae2d89c45b60a90c\preference-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:localbroadcastmanager-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:legacy-support-core-utils-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
+MERGED from [:play-services-tasks-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\4f08be9e4c966c29f9915c37660e54c4\play-services-tasks-17.0.0\AndroidManifest.xml:2:1-9:12
+MERGED from [:core-runtime-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:legacy-support-core-ui-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:bosewearable:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fe061e5b07cc38df1750ffe0651a3884\bosewearable\AndroidManifest.xml:2:1-13:12
+MERGED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:2:1-19:12
+MERGED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:2:1-14:12
+MERGED from [:appcompat-resources-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\appcompat-resources-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [:lifecycle-livedata-core-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:17:1-26:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+	package
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:70-111
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:tools
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:112-158
+	android:versionCode
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:1-5:12
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:11-69
+	android:installLocation
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:2:159-199
+supports-screens
+ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:3-163
+	android:largeScreens
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:78-105
+	android:smallScreens
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:21-48
+	android:normalScreens
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:49-77
+	android:xlargeScreens
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:106-134
+	android:anyDensity
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:3:135-160
+application
+ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:3-83
+MERGED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:5-70:19
+MERGED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:5-70:19
+MERGED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
+MERGED from [:play-services-tasks-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\4f08be9e4c966c29f9915c37660e54c4\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [:play-services-tasks-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\4f08be9e4c966c29f9915c37660e54c4\play-services-tasks-17.0.0\AndroidManifest.xml:7:5-20
+MERGED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:5-89
+MERGED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:5-89
+	android:extractNativeLibs
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:32:18-50
+	android:appComponentFactory
+		ADDED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:24:18-86
+	android:label
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:16-48
+	android:icon
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml:4:49-80
+uses-sdk
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+MERGED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-10:41
+MERGED from [:appcompat-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:appcompat-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f209091eb3926c649f0b3346884e478c\appcompat-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:preference-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\2a643b4e2b4f2354ae2d89c45b60a90c\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:preference-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\2a643b4e2b4f2354ae2d89c45b60a90c\preference-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:localbroadcastmanager-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:localbroadcastmanager-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d711f81259436f09ffdf0b48105165e3\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:legacy-support-core-utils-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:legacy-support-core-utils-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\18f5c1f0dcc08504bb6a1709d838cf6b\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:play-services-tasks-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\4f08be9e4c966c29f9915c37660e54c4\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [:play-services-tasks-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\4f08be9e4c966c29f9915c37660e54c4\play-services-tasks-17.0.0\AndroidManifest.xml:5:5-44
+MERGED from [:core-runtime-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:core-runtime-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\73114719268a97e9fd391905563b2ee9\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:legacy-support-core-ui-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:legacy-support-core-ui-1.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\f5ec57ec49d0a3e9add695de66a9078c\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:bosewearable:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fe061e5b07cc38df1750ffe0651a3884\bosewearable\AndroidManifest.xml:7:5-9:41
+MERGED from [:bosewearable:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fe061e5b07cc38df1750ffe0651a3884\bosewearable\AndroidManifest.xml:7:5-9:41
+MERGED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:7:5-9:41
+MERGED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:7:5-9:41
+MERGED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:7:5-9:41
+MERGED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:7:5-9:41
+MERGED from [:appcompat-resources-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:appcompat-resources-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\23f12b0a995277db82a9d4b860245889\appcompat-resources-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:lifecycle-livedata-core-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:lifecycle-livedata-core-2.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\7282e00d74c6a6acf53f4bfd68421266\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [:core-1.1.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\76f2b6439d16df60df3177021482ee5a\core-1.1.0\AndroidManifest.xml:20:5-22:41
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\launcher\src\main\AndroidManifest.xml
+uses-feature#0x00030000
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:5-54
+	android:glEsVersion
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:12:19-51
+uses-feature#android.hardware.vulkan.version
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:13:5-15:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:15:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:14:9-55
+uses-permission#android.permission.INTERNET
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:5-67
+MERGED from [:bosewearable:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fe061e5b07cc38df1750ffe0651a3884\bosewearable\AndroidManifest.xml:11:5-67
+MERGED from [:bosewearable:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fe061e5b07cc38df1750ffe0651a3884\bosewearable\AndroidManifest.xml:11:5-67
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:17:22-64
+uses-feature#android.hardware.sensor.accelerometer
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:19:5-21:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:21:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:20:9-61
+uses-feature#android.hardware.touchscreen
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:22:5-24:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:24:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:23:9-52
+uses-feature#android.hardware.touchscreen.multitouch
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:25:5-27:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:27:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:26:9-63
+uses-feature#android.hardware.touchscreen.multitouch.distinct
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:28:5-30:36
+	android:required
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:30:9-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:29:9-72
+activity#com.unity3d.player.UnityPlayerActivity
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:33:9-53:20
+	android:screenOrientation
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:39:13-51
+	android:launchMode
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:37:13-44
+	android:hardwareAccelerated
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:36:13-48
+	android:resizeableActivity
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:38:13-47
+	android:configChanges
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:35:13-194
+	android:theme
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:40:13-54
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:34:13-66
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:41:13-45:29
+action#android.intent.action.MAIN
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:17-69
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:42:25-66
+category#android.intent.category.LAUNCHER
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:44:27-74
+meta-data#unityplayer.UnityActivity
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:47:13-49:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:49:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:48:17-57
+meta-data#android.notch_support
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:50:13-52:40
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:52:17-37
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:51:17-53
+meta-data#unity.splash-mode
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:55:9-57:33
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:57:13-30
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:56:13-45
+meta-data#unity.splash-enable
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:58:9-60:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:60:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:59:13-47
+meta-data#unity.launch-fullscreen
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:61:9-63:36
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:63:13-33
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:62:13-51
+meta-data#unity.allow-resizable-window
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:64:9-66:37
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:66:13-34
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:65:13-56
+meta-data#notch.config
+ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:67:9-69:50
+	android:value
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:69:13-47
+	android:name
+		ADDED from [:unityLibrary] C:\Users\Edune\Desktop\STUDY2021\IND_PROJ\Testing\Unity_testing\L4_Attempt_1\Library\Bee\Android\Prj\Mono2x\Gradle\unityLibrary\build\intermediates\library_manifest\debug\AndroidManifest.xml:68:13-40
+meta-data#com.google.android.gms.version
+ADDED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [:play-services-basement-17.0.0:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\294cc5ecc9001f3e94c034cd71f64fdf\play-services-basement-17.0.0\AndroidManifest.xml:24:13-58
+uses-permission#android.permission.BLUETOOTH
+ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:11:5-68
+MERGED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:11:5-68
+MERGED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:11:5-68
+	android:name
+		ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:11:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:12:5-74
+	android:name
+		ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:12:22-71
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:13:5-79
+	android:name
+		ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:13:22-76
+uses-feature#android.hardware.bluetooth_le
+ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:15:5-17:35
+	android:required
+		ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:17:9-32
+	android:name
+		ADDED from [:blecore:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\fb50120341881c37d240d9ac6ed33fa7\blecore\AndroidManifest.xml:16:9-53
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:12:5-81
+	android:name
+		ADDED from [:BoseWearableBridge:] C:\Users\Edune\.gradle\caches\transforms-2\files-2.1\d78e8b62e24786a97d76d196df73558f\BoseWearableBridge\AndroidManifest.xml:12:22-78

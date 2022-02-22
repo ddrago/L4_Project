@@ -999,7 +999,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _updateMode: 0
-  _activeAppIntentProfile: {fileID: 0}
+  _activeAppIntentProfile: {fileID: 11400000, guid: 7a2dd7159ba7d2f45bfe866630a5c805, type: 2}
   _debugProvider:
     _debugLogging: 0
     _name: Debug Device
