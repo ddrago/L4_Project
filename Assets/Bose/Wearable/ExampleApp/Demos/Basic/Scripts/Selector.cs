@@ -22,22 +22,22 @@ public class Selector : MonoBehaviour
             if (objectName == "Item1")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
             } 
             else if (objectName == "Item2")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
             }
             else
             {
                 
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
             }
         }
         else
         {
-            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+            //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
         }
     }
 
@@ -71,12 +71,30 @@ public class Selector : MonoBehaviour
         // Set up the csv file. This should only be done once per file. However, if the file already exists, the code below
         // will just print onto it a new line. 
         // TODO: check the names of all the files that starts with "log" and iterate until you find an available name
-        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
+        /*        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";*/
+        /*string path = android.content.Context.getApplicationInfo().dataDir + "/log.csv";
+        *//*getContext().*//*
         StreamWriter writer = new StreamWriter(path);
         writer.WriteLine("InteractionType,Time,TimeMS,Item");
         writer.WriteLine("[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A");
         //writer.Flush();
-        writer.Close();
+        writer.Close();*/
+
+        string filename = "testFile.txt";
+        filename = Application.persistentDataPath + "/" + filename;
+        System.IO.FileInfo theSourceFile = new System.IO.FileInfo(filename);
+        System.IO.File.WriteAllText(filename, filename);
+        if (System.IO.File.Exists(filename))
+        {
+            System.IO.StreamReader reader = theSourceFile.OpenText();
+            string text = reader.ReadLine();
+            print(text);
+        }
+
+        /*Debug.Log(getApplicationInfo().dataDir);*/
+
+        _firstContact = true;
+
     }
 
     // Update is called once per frame
@@ -96,7 +114,8 @@ public class Selector : MonoBehaviour
                 target_renderer.material.color = new Color(0, 255, 0);
 
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
-                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                print("SELECTION");
+                //LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
                 _firstContact = false;
             }
         }

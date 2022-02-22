@@ -1,0 +1,195 @@
+# List of SDK dependencies of this app, this information is also included in an encrypted form in the APK.
+# For more information visit: https://d.android.com/r/tools/dependency-metadata
+
+library {
+  maven_library {
+    artifactId: "appcompat-1.1.0"
+  }
+  digests {
+    sha256: "\215r\231\274\244L\263\275\361\177U\225vj\313\364Y\374\201\376\342#\350hl\306\254\323\244*\265\300"
+  }
+}
+library {
+  maven_library {
+    artifactId: "preference-1.1.0"
+  }
+  digests {
+    sha256: "l\361\240\231\260;2T\004\033\004p\030A\206[\'\b\300\265F\271\003l\213\r\255\240\252Y\336W"
+  }
+}
+library {
+  maven_library {
+    artifactId: "localbroadcastmanager-1.0.0"
+  }
+  digests {
+    sha256: "\347\0342\214\356\365\304\247\327o-\206\337\033e\326_\342\254\370h\261\244\357\330J?43a\206\330"
+  }
+}
+library {
+  maven_library {
+    artifactId: "legacy-support-core-utils-1.0.0"
+  }
+  digests {
+    sha256: "\247\355\317\001\325\265+04\a0\'\274Gu\267\212Gd\273b\002\273\221\326\034\202\232\335\215\321\307"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-basement-17.0.0"
+  }
+  digests {
+    sha256: "\323$\241x[\274H\277\343c\237\310G\317\323\317C\324\236\226{\\\257\'\224$\n\205EW\243\234"
+  }
+}
+library {
+  maven_library {
+    artifactId: "play-services-tasks-17.0.0"
+  }
+  digests {
+    sha256: ".m\0278\2676G\363\376z\003\213\227\200\271w\027\263tn\256%\200\t\031~6\347\2771\022\245"
+  }
+}
+library {
+  maven_library {
+    artifactId: "core-runtime-2.0.0"
+  }
+  digests {
+    sha256: "\207\346_\307g\307\022\2647d\234|\356$1\353\264\276\326\332\357\202\345\001\324\022[>\323\366_\216"
+  }
+}
+library {
+  maven_library {
+    artifactId: "legacy-support-core-ui-1.0.0"
+  }
+  digests {
+    sha256: "\r\022`\306\347\346\2437\370u\337q\265\026\223\036p?qn\220\210\230\027\315: \372Z\303\331G"
+  }
+}
+library {
+  maven_library {
+    artifactId: "bosewearable"
+  }
+  digests {
+    sha256: "ccNb\277\211>=Qf\216~\005\314\375\331\346\314\213\242H+\211\'\262j\241\310\b\350\036v"
+  }
+}
+library {
+  maven_library {
+    artifactId: "blecore"
+  }
+  digests {
+    sha256: "\233\350\023[\305\242m>;\314\355b\327c\333\223D(Z\351@\177&.\372fC\316\332\260:\317"
+  }
+}
+library {
+  maven_library {
+    artifactId: "BoseWearableBridge"
+  }
+  digests {
+    sha256: "\017\373\341\311d\223o\023\335}R\202\273\251\335d\0030\254b\232\313\301j@\306\303\034\216^K&"
+  }
+}
+library {
+  maven_library {
+    artifactId: "appcompat-resources-1.1.0"
+  }
+  digests {
+    sha256: "\031\224M2\264eQ\241|4~!\211K\225\203\177\275{\252\257\311\342\b\'\2244O\"/sa"
+  }
+}
+library {
+  maven_library {
+    artifactId: "lifecycle-livedata-core-2.0.0"
+  }
+  digests {
+    sha256: "\375\3434\354~\"tL\017[\376|\257\032\204\311\327\0272pD@\005w\275\371\275\222\036\304\367\274"
+  }
+}
+library {
+  maven_library {
+    artifactId: "core-1.1.0"
+  }
+  digests {
+    sha256: "v\307\317\276Yo\343\300\232i\203\277\034\211\350\211)\234\b\254\232;R\316Q\202\240\210\320Vd~"
+  }
+}
+library {
+  digests {
+    sha256: "\376\0227\277\002\235\006>\177)\3769\256\257s\357t\310\260\243e\204\206\374)\323\305C&e8\211"
+  }
+}
+library {
+  digests {
+    sha256: "c*\016T\aF\035\347t@\223R\224\016)*)\0207rB\a\247\207\202\fw\332\367\323;r"
+  }
+}
+library {
+  digests {
+    sha256: "\323\215c\355\263\017\024g\201\215P\252\360_\212i-\352\21319*\004\233\372\231\033\025\232\325\266\222"
+  }
+}
+library {
+  digests {
+    sha256: "\000\025$\a\320\243?jF1\000\314q\273\0325\374\b\322b<\261\347\361sU\362%\307\3542\000"
+  }
+}
+library_dependencies {
+}
+library_dependencies {
+  library_index: 1
+}
+library_dependencies {
+  library_index: 2
+}
+library_dependencies {
+  library_index: 3
+}
+library_dependencies {
+  library_index: 4
+}
+library_dependencies {
+  library_index: 5
+}
+library_dependencies {
+  library_index: 6
+}
+library_dependencies {
+  library_index: 7
+}
+library_dependencies {
+  library_index: 8
+}
+library_dependencies {
+  library_index: 9
+}
+library_dependencies {
+  library_index: 10
+}
+library_dependencies {
+  library_index: 11
+}
+library_dependencies {
+  library_index: 12
+}
+library_dependencies {
+  library_index: 13
+}
+library_dependencies {
+  library_index: 14
+}
+library_dependencies {
+  library_index: 15
+}
+library_dependencies {
+  library_index: 16
+}
+library_dependencies {
+  library_index: 17
+}
+module_dependencies {
+  module_name: "base"
+  dependency_index: 16
+  dependency_index: 17
+  dependency_index: 14
+  dependency_index: 15
+}
