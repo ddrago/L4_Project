@@ -13,6 +13,7 @@ public class Selector : MonoBehaviour
 
     private static RaycastHit _hitInfo;
     private static bool _firstContact;
+    private static string filename = "log.csv";
 
     public static void Press()
     {
@@ -22,22 +23,22 @@ public class Selector : MonoBehaviour
             if (objectName == "Item1")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
             } 
             else if (objectName == "Item2")
             {
                 FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
             }
             else
             {
                 
-                //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
             }
         }
         else
         {
-            //LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
         }
     }
 
@@ -56,12 +57,15 @@ public class Selector : MonoBehaviour
 
     public static void LogOnCSV(string interactionType, string time, long timeMS, string item)
     {
-        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
-        StreamWriter writer = new StreamWriter(path, append: true);
+        /*        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
+                StreamWriter writer = new StreamWriter(path, append: true);
 
-        writer.WriteLine(interactionType + "," + time + "," + (timeMS).ToString() + "," + item);
-        //writer.Flush();
-        writer.Close();
+                writer.WriteLine(interactionType + "," + time + "," + (timeMS).ToString() + "," + item);
+                //writer.Flush();
+                writer.Close();*/
+        System.IO.File.AppendAllLines(filename, new string[] {
+            interactionType + "," + time + "," + (timeMS).ToString() + "," + item
+        });
     }
 
     private void Awake()
@@ -80,10 +84,15 @@ public class Selector : MonoBehaviour
         //writer.Flush();
         writer.Close();*/
 
-        string filename = "testFile.txt";
+        //Set the path to the logging file as the persistent data folders in the android system
         filename = Application.persistentDataPath + "/" + filename;
+
         System.IO.FileInfo theSourceFile = new System.IO.FileInfo(filename);
-        System.IO.File.WriteAllText(filename, filename);
+        //System.IO.File.WriteAllText(filename, "[TEST]" + filename);
+        System.IO.File.WriteAllLines(filename, new string[] {
+            "InteractionType,Time,TimeMS,Item",
+            "[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A"
+        });
         if (System.IO.File.Exists(filename))
         {
             System.IO.StreamReader reader = theSourceFile.OpenText();
@@ -115,7 +124,7 @@ public class Selector : MonoBehaviour
 
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
                 print("SELECTION");
-                //LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
                 _firstContact = false;
             }
         }
