@@ -12,7 +12,10 @@ public class Selector : MonoBehaviour
     private static Ray _ray;
 
     private static RaycastHit _hitInfo;
+
     private static bool _firstContact;
+    private static string _firstContactName;
+
     private static string filename = "log.csv";
 
     public static void Press()
@@ -71,18 +74,7 @@ public class Selector : MonoBehaviour
     private void Awake()
     {
         _firstContact = true;
-
-        // Set up the csv file. This should only be done once per file. However, if the file already exists, the code below
-        // will just print onto it a new line. 
-        // TODO: check the names of all the files that starts with "log" and iterate until you find an available name
-        /*        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";*/
-        /*string path = android.content.Context.getApplicationInfo().dataDir + "/log.csv";
-        *//*getContext().*//*
-        StreamWriter writer = new StreamWriter(path);
-        writer.WriteLine("InteractionType,Time,TimeMS,Item");
-        writer.WriteLine("[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A");
-        //writer.Flush();
-        writer.Close();*/
+        _firstContactName = "";
 
         //Set the path to the logging file as the persistent data folders in the android system
         filename = Application.persistentDataPath + "/" + filename;
@@ -116,7 +108,7 @@ public class Selector : MonoBehaviour
         {
             Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);
 
-            if (_firstContact)
+            if (_firstContact || (_hitInfo.collider.gameObject.name != _firstContactName))
             {
                 // Get the renderer of the object hit by the raycasting
                 Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
@@ -125,7 +117,11 @@ public class Selector : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
                 print("SELECTION");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                
+                // Reset/update the flags
                 _firstContact = false;
+                _firstContactName = _hitInfo.collider.gameObject.name;
+
             }
         }
         else
