@@ -20,6 +20,7 @@ ScriptsOnlyBuild:
     - Bose.Wearable.Examples.AdvancedDemoController
     - Bose.Wearable.Examples.AdvancedDemoUIPanel
     - Bose.Wearable.Examples.AppRoot
+    - Bose.Wearable.Examples.BasicDemoUIPanel
     - Bose.Wearable.Examples.CalibrationUIPanel
     - Bose.Wearable.Examples.CameraController
     - Bose.Wearable.Examples.DontDestroyOnLoad
@@ -99,6 +100,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.RectMask2D
     - UnityEngine.UI.ScrollRect
     - UnityEngine.UI.Text
+    - UnityEngine.UI.Toggle
     - UnityEngine.UI.VerticalLayoutGroup
   serializedClasses:
     Bose.Wearable:
@@ -170,6 +172,7 @@ ScriptsOnlyBuild:
     - UnityEngine.UI.Navigation
     - UnityEngine.UI.ScrollRect/ScrollRectEvent
     - UnityEngine.UI.SpriteState
+    - UnityEngine.UI.Toggle/ToggleEvent
   sceneClasses:
     Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Scenes/AdvancedDemo.unity:
     - Class: 1
@@ -324,9 +327,21 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
+      Script: {instanceID: 1598}
+    - Class: 114
+      Script: {instanceID: 1600}
+    - Class: 114
+      Script: {instanceID: 1602}
+    - Class: 114
       Script: {instanceID: 2208}
     - Class: 114
+      Script: {instanceID: 2268}
+    - Class: 114
       Script: {instanceID: 2370}
+    - Class: 114
+      Script: {instanceID: 2588}
+    - Class: 114
+      Script: {instanceID: 2608}
     - Class: 114
       Script: {instanceID: 3030}
     - Class: 114
@@ -341,9 +356,19 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 124
       Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
     - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
       Script: {instanceID: 0}
     - Class: 241
       Script: {instanceID: 0}
