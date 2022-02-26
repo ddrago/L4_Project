@@ -1,0 +1,1224 @@
+Using pre-set license
+Built from '2021.2/staging' branch; Version is '2021.2.12f1 (48b1aa000234) revision 4764074'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Core' Language: 'en' Physical Memory: 16145 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 0
+
+COMMAND LINE ARGUMENTS:
+C:\Program Files\Unity\Hub\Editor\2021.2.12f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker2
+-projectPath
+C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/L4_Attempt_1
+-logFile
+Logs/AssetImportWorker2.log
+-srvPort
+54323
+Successfully changed project path to: C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/L4_Attempt_1
+C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/L4_Attempt_1
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 107.06 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 1.65 ms.
+Initialize engine version: 2021.2.12f1 (48b1aa000234)
+[Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/L4_Attempt_1/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce GTX 1650 Ti (ID=0x1f95)
+    Vendor:   NVIDIA
+    VRAM:     3962 MB
+    Driver:   30.0.14.7141
+Initialize mono
+Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56400
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Program Files/Unity/Hub/Editor/2021.2.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.015805 seconds.
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 72.10 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.219 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1220ms)
+		BeginReloadAssembly (145ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (851ms)
+			LoadAssemblies (140ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (214ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (60ms)
+			SetupLoadedEditorAssemblies (469ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (13ms)
+				SetLoadedEditorAssemblies (0ms)
+				RefreshPlugins (72ms)
+				BeforeProcessingInitializeOnLoad (2ms)
+				ProcessInitializeOnLoadAttributes (289ms)
+				ProcessInitializeOnLoadMethodAttributes (92ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.008416 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.74 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.783 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1784ms)
+		BeginReloadAssembly (196ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (12ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (37ms)
+		EndReloadAssembly (1341ms)
+			LoadAssemblies (121ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (344ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (98ms)
+			SetupLoadedEditorAssemblies (663ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (9ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (104ms)
+				ProcessInitializeOnLoadAttributes (466ms)
+				ProcessInitializeOnLoadMethodAttributes (61ms)
+				AfterProcessingInitializeOnLoad (21ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (15ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.14 seconds
+Refreshing native plugins compatible for Editor in 1.78 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.23 ms.
+Unloading 1813 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 50 unused Assets / (49.8 KB). Loaded Objects now: 2253.
+Memory consumption went from 80.3 MB to 80.3 MB.
+Total: 8.497900 ms (FindLiveObjects: 0.568400 ms CreateObjectMapping: 0.727200 ms MarkObjects: 6.899700 ms  DeleteObjects: 0.299800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 175400.267537 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Info.plist
+  artifactKey: Guid(0cdd2dd6b6f2a42458a5b9a0cc425e6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Info.plist using Guid(0cdd2dd6b6f2a42458a5b9a0cc425e6d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a5e8fff2f8b2a6fbb43b8b7bd0779dc') in 0.149658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Bose/Wearable/Modules/Connection/Art/UI/elements/signal_2.png
+  artifactKey: Guid(28c8c08ba7444584bab01ffa97bf6db5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Connection/Art/UI/elements/signal_2.png using Guid(28c8c08ba7444584bab01ffa97bf6db5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '881d6a63a752ea4302a50dc7cdb56400') in 0.038458 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Bose/Wearable/Modules/Connection/Art/UI/elements/conn_status_success.png
+  artifactKey: Guid(e189b7e1e2b7b2d418c07acc26e27625) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Connection/Art/UI/elements/conn_status_success.png using Guid(e189b7e1e2b7b2d418c07acc26e27625) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a0ba024bfa6bf9162ebf61d51f223250') in 0.028641 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Basic/Art/Materials/MenuItem_material.mat
+  artifactKey: Guid(dafa12d0cf5445e4f952da74859ce7d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Basic/Art/Materials/MenuItem_material.mat using Guid(dafa12d0cf5445e4f952da74859ce7d8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a58f0149579d029045268343e9b46982') in 0.034212 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/middle_lp.ogg
+  artifactKey: Guid(c6701866305054c90bb4ab74b15a08b7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/middle_lp.ogg using Guid(c6701866305054c90bb4ab74b15a08b7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '96d467699cdc91244273a8457a95336d') in 0.021416 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/high_lp.ogg
+  artifactKey: Guid(2ad6984faf74043ad9287c800a998a22) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/high_lp.ogg using Guid(2ad6984faf74043ad9287c800a998a22) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8707f421e27c2846c85770b4171ca6bf') in 0.017658 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/spawn.ogg
+  artifactKey: Guid(fb1eb9b5ea61c482ba38ed006cedd82a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/spawn.ogg using Guid(fb1eb9b5ea61c482ba38ed006cedd82a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed7c1cc33b7d9aa3e28a69dfc75b93c2') in 0.016566 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/HDRIs/SKY_TEST.mat
+  artifactKey: Guid(0538f6f82a59dc24c8008d34522c7527) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/HDRIs/SKY_TEST.mat using Guid(0538f6f82a59dc24c8008d34522c7527) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ab1e994778ed73630d6426306a3e25d5') in 0.031062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/collect.ogg
+  artifactKey: Guid(9efef341553cb4acfb79c2997835b9c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/collect.ogg using Guid(9efef341553cb4acfb79c2997835b9c4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '68810d83f807d9fa8c6e00f8e704afe3') in 0.018490 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000033 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/low_lp.ogg
+  artifactKey: Guid(951025460d89f426bb93ba0c3d212265) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/MX/low_lp.ogg using Guid(951025460d89f426bb93ba0c3d212265) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '374f9fc04ee86b0e3a29292dcce475ae') in 0.017364 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/lock.ogg
+  artifactKey: Guid(ab41f390a1e3d4c4fa7a1eefa1f3bf75) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Audio/SFX/lock.ogg using Guid(ab41f390a1e3d4c4fa7a1eefa1f3bf75) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6ad6dab77530421905b0ec9f2b45f932') in 0.020187 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000038 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Logging
+  artifactKey: Guid(1622a4b7ecd1a4025820f1f03d2ec1d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Logging using Guid(1622a4b7ecd1a4025820f1f03d2ec1d2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ed8692636e971d2277a8d936245e4812') in 0.019072 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000044 seconds.
+  path: Assets/Bose/Wearable/Modules/Shared/Art/UI/loading_fade_white.png
+  artifactKey: Guid(440187ed83e524d13bd279b3c76f4195) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Shared/Art/UI/loading_fade_white.png using Guid(440187ed83e524d13bd279b3c76f4195) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e62216e0750601ca9621c77d0410a92e') in 0.026232 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000037 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Data/GestureIconFactory.asset
+  artifactKey: Guid(604d22af31a8d394e818061d331b3614) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Data/GestureIconFactory.asset using Guid(604d22af31a8d394e818061d331b3614) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '92be479e19cda3437976a8297e2f804a') in 0.012943 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Scenes/AdvancedDemo/LightingData.asset
+  artifactKey: Guid(217d9c8de39b5744f9fc71183e2f714f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Scenes/AdvancedDemo/LightingData.asset using Guid(217d9c8de39b5744f9fc71183e2f714f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '47d329e5afc5c0089f410c64462cca53') in 0.010924 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000047 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Art/gesture_affirmative_glow.png
+  artifactKey: Guid(c8739e05381c049b881450be7c88750f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Art/gesture_affirmative_glow.png using Guid(c8739e05381c049b881450be7c88750f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0159e6a71ea473645a803c0ceab1cd6d') in 0.020806 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Bose/Wearable/Modules/Connection/Art/UI/icons/icon_bose_connect.png
+  artifactKey: Guid(0bea904356b38dd4cb659a872a83f41f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Connection/Art/UI/icons/icon_bose_connect.png using Guid(0bea904356b38dd4cb659a872a83f41f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'eba8b9c8d2b2e1bdaa817b8acad0d3a4') in 0.055478 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000049 seconds.
+  path: Assets/Bose/Wearable/Modules/Shared/Scripts/Editor/Drawers/LocaleKVPDrawer.cs
+  artifactKey: Guid(9e159c21d25f4ec4bef317479e1bf6ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Shared/Scripts/Editor/Drawers/LocaleKVPDrawer.cs using Guid(9e159c21d25f4ec4bef317479e1bf6ce) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2a07f8345f28a3c89d88a296967abfc') in 0.019929 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Bose/Wearable/Modules/Debugging/Data/Theming/ColorStyleIds/OrangeColorStyleId.asset
+  artifactKey: Guid(65afb51f2b91f264a99fc9e1491f29d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Debugging/Data/Theming/ColorStyleIds/OrangeColorStyleId.asset using Guid(65afb51f2b91f264a99fc9e1491f29d3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8913555f64886f16df5bd9b423cf547f') in 0.018152 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000070 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/MSH_Polyhedron.fbx
+  artifactKey: Guid(1f9bb743f3aa2504b966a47b4bdf53db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/MSH_Polyhedron.fbx using Guid(1f9bb743f3aa2504b966a47b4bdf53db) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '896b71f32feaafa6953d8939aef08b6e') in 0.067537 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Headers/BLECore-Swift.h
+  artifactKey: Guid(e8dc1c4966240441eb1abff503d6463a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Headers/BLECore-Swift.h using Guid(e8dc1c4966240441eb1abff503d6463a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c01fedc32a03c712c268f5749e3c7596') in 0.028405 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Textures/TXT_Shards02.tga
+  artifactKey: Guid(b8421b5af264edb499ea14261dad140d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Textures/TXT_Shards02.tga using Guid(b8421b5af264edb499ea14261dad140d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'efa88ce1d128843543f9a9b67e85b8ea') in 0.069299 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Headers/Logging-umbrella.h
+  artifactKey: Guid(925d31c6c82f74f0f8cece81e90e94e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Headers/Logging-umbrella.h using Guid(925d31c6c82f74f0f8cece81e90e94e8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6fc51a76e0d5c4c26c8374e7cf4971bb') in 0.014751 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000032 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Textures/TXT_Droplet_Texture.png
+  artifactKey: Guid(69bc71ae997e42542abf553026451c9f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Textures/TXT_Droplet_Texture.png using Guid(69bc71ae997e42542abf553026451c9f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '81a8536ebb25fd419c0d0cc5cfd35e33') in 0.063397 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/module.modulemap
+  artifactKey: Guid(a9040943a6fe6474483f76dfb7ebcc2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/module.modulemap using Guid(a9040943a6fe6474483f76dfb7ebcc2b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4a3268447d763d7cd80ecced33b3df73') in 0.013588 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000061 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Shards02.mat
+  artifactKey: Guid(0151a3b6cf4090645a4c9e8673c44b4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Shards02.mat using Guid(0151a3b6cf4090645a4c9e8673c44b4f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5f4cb4096ed6bf8079411ddaa6c8311') in 0.035294 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Lightning.mat
+  artifactKey: Guid(0baca75779e6da64cb040010cdef2e46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Lightning.mat using Guid(0baca75779e6da64cb040010cdef2e46) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '809b2d8864a4c5ea102a09c954f39f16') in 0.024984 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Bose/Wearable/Modules/Shared/Data/Localization/FontStyleIds/PrimaryFontStyleId.asset
+  artifactKey: Guid(43f68e16c302c7640a62503c1faf410a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Shared/Data/Localization/FontStyleIds/PrimaryFontStyleId.asset using Guid(43f68e16c302c7640a62503c1faf410a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '23a44cf764ca7e198811c9bf4e8e414f') in 0.018121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000043 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesRondo/Materials/MTL_Rondo.mat
+  artifactKey: Guid(f9417219234b27f4fa5ca6c36d4d9c53) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesRondo/Materials/MTL_Rondo.mat using Guid(f9417219234b27f4fa5ca6c36d4d9c53) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '022a310783d6bd29ab8c0216ead2f4fb') in 0.028706 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Materials/MTL_QC35_B.mat
+  artifactKey: Guid(f4474485a8c5b2d458bb3a769605f4d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Materials/MTL_QC35_B.mat using Guid(f4474485a8c5b2d458bb3a769605f4d9) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0e464cc7fff879003e4d6704eba4dd12') in 0.030055 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/BLECore.swiftmodule/arm64.swiftinterface
+  artifactKey: Guid(3e691bcb5c9c04aa083913d851e7380c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/BLECore.swiftmodule/arm64.swiftinterface using Guid(3e691bcb5c9c04aa083913d851e7380c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f5b39292ad422afbe4ccaf35567782aa') in 0.015548 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/BLECore.swiftmodule/arm64-apple-ios.swiftmodule
+  artifactKey: Guid(1a3614b1701cd429a971042a2fbc8454) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BLECore.framework/Modules/BLECore.swiftmodule/arm64-apple-ios.swiftmodule using Guid(1a3614b1701cd429a971042a2fbc8454) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '98dc4ab18f30e8163de7b32ce3e13e2b') in 0.015470 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000045 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Textures/TEX_Alto_ALB.tga
+  artifactKey: Guid(6145a761625e96843a2df92178c6f4dd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Textures/TEX_Alto_ALB.tga using Guid(6145a761625e96843a2df92178c6f4dd) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8b04b89239b79494ff6a12438eb24e7c') in 0.077012 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Meshes/FramesAlto.fbx
+  artifactKey: Guid(7dc70461bd9e9824096a5247317c5564) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Meshes/FramesAlto.fbx using Guid(7dc70461bd9e9824096a5247317c5564) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '3dd8f40d27afe55b1675df83574fdedb') in 0.023084 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000055 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Materials/MTL_QC35_Silver_A.mat
+  artifactKey: Guid(8e861810bcdbc464ca7bf36215f0b508) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Materials/MTL_QC35_Silver_A.mat using Guid(8e861810bcdbc464ca7bf36215f0b508) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f03ac0064f668fc16dd7206e2c36cf45') in 0.029094 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BoseWearable.framework/Modules/BoseWearable.swiftmodule/arm64.swiftmodule
+  artifactKey: Guid(e17fb99f313ea44cb83d62594ddec19a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BoseWearable.framework/Modules/BoseWearable.swiftmodule/arm64.swiftmodule using Guid(e17fb99f313ea44cb83d62594ddec19a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2a9979f9cbe84e419cedc19710fcd4bf') in 0.015558 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/Bose/Wearable/Modules/Connection/Scripts/Editor/Inspectors/WearableConnectUIPanelInspector.cs
+  artifactKey: Guid(da9538056e65b417e8528c5af8a51f90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Connection/Scripts/Editor/Inspectors/WearableConnectUIPanelInspector.cs using Guid(da9538056e65b417e8528c5af8a51f90) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '42f2400fe176e874c90cfbf681f7f86d') in 0.019225 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000034 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Textures/TEX_Alto_METSMO.tga
+  artifactKey: Guid(cade6edc30ec28d4a933d7a1c3235252) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesAlto/Textures/TEX_Alto_METSMO.tga using Guid(cade6edc30ec28d4a933d7a1c3235252) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '50c091c622bcf7a842cc629274a7bbba') in 0.031154 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Materials/MAT_NCHP700_Black.mat
+  artifactKey: Guid(1eebe539c2f4e594eb5db4ab28b22306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Materials/MAT_NCHP700_Black.mat using Guid(1eebe539c2f4e594eb5db4ab28b22306) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c65257026840705c95ead9d1737fa4e0') in 0.039992 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Bose/Wearable/Modules/Debugging/Scripts/Editor/Inspectors/AutoConfigureHorizontalGridLayoutInspector.cs
+  artifactKey: Guid(257fbd0bf1074f9b8c0f39ee1d9f6e6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Debugging/Scripts/Editor/Inspectors/AutoConfigureHorizontalGridLayoutInspector.cs using Guid(257fbd0bf1074f9b8c0f39ee1d9f6e6c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2983e882af0255debb75691650131720') in 0.032288 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000046 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/DeviceFallback/Textures/TEX_Fallback_EMIS.tga
+  artifactKey: Guid(f42d84f61ce825741b6acdc3bf43bd68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/DeviceFallback/Textures/TEX_Fallback_EMIS.tga using Guid(f42d84f61ce825741b6acdc3bf43bd68) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'dc8ed0497f887680dd2ab42f7ab30896') in 0.279489 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Normal/QuietComfort35Two_Mat02_Normal.tga
+  artifactKey: Guid(825cd758cc9e23248a9f1ed9fa7a7a2e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Normal/QuietComfort35Two_Mat02_Normal.tga using Guid(825cd758cc9e23248a9f1ed9fa7a7a2e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'fd892887f6598a71452bb09161947f3c') in 0.068866 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Rose Gold/QuietComfort35Two_Mat01_RoseGold_Albedo.tga
+  artifactKey: Guid(4a08283b23d88144cb1f939f1a25732a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Rose Gold/QuietComfort35Two_Mat01_RoseGold_Albedo.tga using Guid(4a08283b23d88144cb1f939f1a25732a) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0974c06bbb3a7328a66fa82af9f38d0d') in 0.084594 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000031 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Silver/QuietComfort35Two_Mat01_Silver_Metal_Smoothness.tga
+  artifactKey: Guid(91a0c85ec731beb45b9794679e47347e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Silver/QuietComfort35Two_Mat01_Silver_Metal_Smoothness.tga using Guid(91a0c85ec731beb45b9794679e47347e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '1d2588a664e91c78ee22baf2e47d9619') in 0.062236 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000041 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Orientation_Widget.mat
+  artifactKey: Guid(0fd6f44b303fccb47ad56e6c07d898c7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Orientation_Widget.mat using Guid(0fd6f44b303fccb47ad56e6c07d898c7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f244b1a3baadbe0cf3fbb1a460ed6ca4') in 0.029205 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000069 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Modules/Logging.swiftmodule/arm64-apple-ios.swiftmodule
+  artifactKey: Guid(7ef73a303f97a40d8964141becf9bdb7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Modules/Logging.swiftmodule/arm64-apple-ios.swiftmodule using Guid(7ef73a303f97a40d8964141becf9bdb7) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bbc8faa7229976e187a838ca65c1022d') in 0.015136 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000039 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Polyhedron_Interior.mat
+  artifactKey: Guid(30f728098d45b134fb16cbdca0f79b40) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Polyhedron_Interior.mat using Guid(30f728098d45b134fb16cbdca0f79b40) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '56cfda84362544b51c1d977578515f4c') in 0.031413 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000053 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Modules/Logging.swiftmodule/arm64.swiftdoc
+  artifactKey: Guid(020549526c03c4636849c3232ecb8cfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Modules/Logging.swiftmodule/arm64.swiftdoc using Guid(020549526c03c4636849c3232ecb8cfb) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'aa85248e75625f9ca51776ec862bc398') in 0.014598 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000086 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Poly_Wireframe.mat
+  artifactKey: Guid(28e3c217f8bb24747ba320ac76af0fa2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/Shapes/Meshes/Materials/MTL_Poly_Wireframe.mat using Guid(28e3c217f8bb24747ba320ac76af0fa2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'a26ab108d1beb0817a39860a46cbca82') in 0.037309 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000036 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Black/QuietComfort35Two_Mat02_Black_Albedo.tga
+  artifactKey: Guid(7b6b6b74ba04abe4da3ad5f727273fb6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/QuietComfort35Two/Textures/Black/QuietComfort35Two_Mat02_Black_Albedo.tga using Guid(7b6b6b74ba04abe4da3ad5f727273fb6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '8c25951e54759d51e165718a06414112') in 0.092756 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Bose/Wearable/Modules/Debugging/Data/Theming/ColorStyleIds/BlueColorStyleId.asset
+  artifactKey: Guid(f00bf582c0c9ab54dbc6fe45118898b2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Debugging/Data/Theming/ColorStyleIds/BlueColorStyleId.asset using Guid(f00bf582c0c9ab54dbc6fe45118898b2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'da88acf4d163064b65f0ba0913f5193c') in 0.021993 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Energy.mat
+  artifactKey: Guid(e35b9ff7b072ead40b2326ca06f3ae41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Art/VFX/Materials/MTL_Energy.mat using Guid(e35b9ff7b072ead40b2326ca06f3ae41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '125c12a00eb2fa60eba39b5a18a63bb9') in 0.020661 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Headers/Logging-Swift.h
+  artifactKey: Guid(a5112ad4811d747fdba40a3361b4683c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/Logging.framework/Headers/Logging-Swift.h using Guid(a5112ad4811d747fdba40a3361b4683c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '99cf09efe8225d74bfe7e7106c7acdf6') in 0.025610 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000050 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Meshes/NoiseCancellingHeadphones700.fbx
+  artifactKey: Guid(80fccc09502845545bda3ec9a1436506) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Meshes/NoiseCancellingHeadphones700.fbx using Guid(80fccc09502845545bda3ec9a1436506) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'c96106de2a44cad1e768e50a60a4eee0') in 0.032284 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000094 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesRondo/Textures/TEX_Rondo_METSMO.tga
+  artifactKey: Guid(4b5b86289f89e2b4b8585c893e26f8e2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/FramesRondo/Textures/TEX_Rondo_METSMO.tga using Guid(4b5b86289f89e2b4b8585c893e26f8e2) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'bf0bf35f90f93f48a2707a33bad01836') in 0.047075 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000042 seconds.
+  path: Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BoseWearable.framework/Headers/BoseWearable-Swift.h
+  artifactKey: Guid(1491369a880fb4b44b1f0d6e7e566ec4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Plugins/iOS/BoseWearable/BoseWearable.framework/Headers/BoseWearable-Swift.h using Guid(1491369a880fb4b44b1f0d6e7e566ec4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '993fcba0373acf8a422e239f25ad061f') in 0.022233 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Textures/Black/NCHP700_Black_Metal_Smoothness.tga
+  artifactKey: Guid(a588ab1b90aa799469128c64243b8dc3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/ModelLoader/Art/WearableModels/NoiseCancellingHeadphones700/Textures/Black/NCHP700_Black_Metal_Smoothness.tga using Guid(a588ab1b90aa799469128c64243b8dc3) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5999b2fe7338a670a2c063400955792c') in 0.041429 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000035 seconds.
+  path: Assets/Bose/Wearable/Modules/Debugging/Prefabs/SubPrefabs/SensorRateToggle.prefab
+  artifactKey: Guid(21e635f226eb692479dc2e69f12f2eae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Debugging/Prefabs/SubPrefabs/SensorRateToggle.prefab using Guid(21e635f226eb692479dc2e69f12f2eae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '468a92fb44760d825f8f70e57ef83b1d') in 0.054779 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000087 seconds.
+  path: Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/CubeRoom.obj
+  artifactKey: Guid(f6b2626933a4f497b92c5549b0dd8f2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/ResonanceAudio/Demos/Environment/ResonanceAudioDemo/CubeRoom.obj using Guid(f6b2626933a4f497b92c5549b0dd8f2d) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'f43b48db113ac4431e6a63e15d1b885d') in 0.023062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000040 seconds.
+  path: Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+  artifactKey: Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset using Guid(f952c082cb03451daed3ee968ac6c63e) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4ee73e6d0c0df963160e4dbe71ec9adf') in 0.017121 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000052 seconds.
+  path: Assets/Bose/Wearable/Scripts/Hardware/OSService.cs
+  artifactKey: Guid(128173139f8e403cbea6f8496715f5b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Scripts/Hardware/OSService.cs using Guid(128173139f8e403cbea6f8496715f5b6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'e4621182ac5535a3ba8964f7cd9ef401') in 0.016565 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000066 seconds.
+  path: Assets/Bose/Wearable/Modules/Connection/Scripts/UI/SignalStrengthIconFactory.cs
+  artifactKey: Guid(953eb1cd16f9056438f372cfe38385e6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Modules/Connection/Scripts/UI/SignalStrengthIconFactory.cs using Guid(953eb1cd16f9056438f372cfe38385e6) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ebd425ea7e93d96bb16a5e4181a579cf') in 0.012964 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000048 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs
+  artifactKey: Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs using Guid(dc20866c0d5e413ab7559440e15333ae) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '430be181483e1be0c99193e619166dcf') in 0.015062 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000056 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+  artifactKey: Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader using Guid(14eb328de4b8eb245bb7cea29e4ac00b) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '5b195fbfa3b4b50c43c8f2b719c472d2') in 0.019502 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000137 seconds.
+  path: Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+  artifactKey: Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader using Guid(1e3b057af24249748ff873be7fafee47) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2ae76f38a4aa5cad10b3f0ec80187555') in 0.014790 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Bose/Wearable/Scripts/Hardware/OSServiceFlags.cs
+  artifactKey: Guid(54f3e4882b9646a3bf143e038dd8ee8c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Scripts/Hardware/OSServiceFlags.cs using Guid(54f3e4882b9646a3bf143e038dd8ee8c) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'b2c12dbae61bad5428e32defa87c7f65') in 0.016773 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf
+  artifactKey: Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf using Guid(997a43b767814dd0a7642ec9b78cba41) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '2299305eb27f6a398f984d9d61d196f3') in 0.022140 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Scripts/MainMenuUIPanel.cs
+  artifactKey: Guid(814ab99d7fca5444f88236866fe04bea) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Scripts/MainMenuUIPanel.cs using Guid(814ab99d7fca5444f88236866fe04bea) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6e6407c9244f63b2c27924bf6ed98b91') in 0.015069 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000058 seconds.
+  path: Assets/Bose/Wearable/Scripts/Hardware/OSPermissionExtensions.cs
+  artifactKey: Guid(d1d2fc09a67a542449a040f39d8be5b8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Scripts/Hardware/OSPermissionExtensions.cs using Guid(d1d2fc09a67a542449a040f39d8be5b8) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '6302d89e3b4cf4aa7df1d1fde84d8b94') in 0.015142 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg
+  artifactKey: Guid(8878a782f4334ecbbcf683b3ac780966) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg using Guid(8878a782f4334ecbbcf683b3ac780966) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: 'ce1f8a0ea32ee46f086b57ba2033ee0e') in 0.038559 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000027 seconds.
+  path: Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs
+  artifactKey: Guid(43bcd35a1c0c40ccb6d472893fe2093f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs using Guid(43bcd35a1c0c40ccb6d472893fe2093f) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '0217371007ef52072fae02544669b78d') in 0.015902 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000026 seconds.
+  path: Assets/Bose/Wearable/Scripts/Editor/Inspectors/WearableGestureConfigDrawer.cs
+  artifactKey: Guid(23639fde984f468fb70804fdc8bd73c5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/Scripts/Editor/Inspectors/WearableGestureConfigDrawer.cs using Guid(23639fde984f468fb70804fdc8bd73c5) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '4180fc4f1310679f2a254ff7387e139f') in 0.014712 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 88.351383 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity
+  artifactKey: Guid(e822a72393d35429f941bfee942e76f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity using Guid(e822a72393d35429f941bfee942e76f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '359e57f1e2eed835c0dc2bf6dd14d6db') in 0.025552 seconds 
+========================================================================
+Received Prepare
+Refreshing native plugins compatible for Editor in 19.33 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 43 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (23.0 KB). Loaded Objects now: 2254.
+Memory consumption went from 43.8 MB to 43.8 MB.
+Total: 5.665700 ms (FindLiveObjects: 0.234000 ms CreateObjectMapping: 0.122200 ms MarkObjects: 5.277000 ms  DeleteObjects: 0.031100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 359.174541 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity
+  artifactKey: Guid(e822a72393d35429f941bfee942e76f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity using Guid(e822a72393d35429f941bfee942e76f4) Importer(2089858483,934ff659095e30574adcf32a4c2f97b5) Generated GUIDs only implemented for interfaces!
+ -> (artifact id: '864fed919dc7789511b695f0ce6a00ee') in 0.026180 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.006741 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.69 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.204 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1205ms)
+		BeginReloadAssembly (158ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (879ms)
+			LoadAssemblies (104ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (244ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (406ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (66ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (46ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 6.58 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.08 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2256.
+Memory consumption went from 79.1 MB to 79.0 MB.
+Total: 3.656600 ms (FindLiveObjects: 0.210100 ms CreateObjectMapping: 0.096800 ms MarkObjects: 3.317900 ms  DeleteObjects: 0.030300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 171.334917 seconds.
+  path: Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity
+  artifactKey: Guid(e822a72393d35429f941bfee942e76f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scenes/BasicDemo.unity using Guid(e822a72393d35429f941bfee942e76f4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c953707d6878f47805a39f3f463fce94') in 0.028728 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.003890 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.78 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1263ms)
+		BeginReloadAssembly (205ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (43ms)
+		EndReloadAssembly (925ms)
+			LoadAssemblies (141ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (271ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (64ms)
+			SetupLoadedEditorAssemblies (390ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (86ms)
+				ProcessInitializeOnLoadAttributes (241ms)
+				ProcessInitializeOnLoadMethodAttributes (34ms)
+				AfterProcessingInitializeOnLoad (9ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (6ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 8.46 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2258.
+Memory consumption went from 79.1 MB to 79.0 MB.
+Total: 3.638200 ms (FindLiveObjects: 0.204300 ms CreateObjectMapping: 0.085100 ms MarkObjects: 3.312200 ms  DeleteObjects: 0.034800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004845 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.75 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.336 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1337ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (45ms)
+		EndReloadAssembly (999ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (221ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (46ms)
+			SetupLoadedEditorAssemblies (513ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (17ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (326ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (15ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (10ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 10.02 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2260.
+Memory consumption went from 79.1 MB to 79.0 MB.
+Total: 3.890300 ms (FindLiveObjects: 0.219200 ms CreateObjectMapping: 0.092100 ms MarkObjects: 3.537700 ms  DeleteObjects: 0.039600 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004927 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.66 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.255 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1256ms)
+		BeginReloadAssembly (183ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (932ms)
+			LoadAssemblies (110ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (250ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (49ms)
+			SetupLoadedEditorAssemblies (419ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (16ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (71ms)
+				ProcessInitializeOnLoadAttributes (264ms)
+				ProcessInitializeOnLoadMethodAttributes (53ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 9.76 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2262.
+Memory consumption went from 79.1 MB to 79.0 MB.
+Total: 4.002300 ms (FindLiveObjects: 0.306400 ms CreateObjectMapping: 0.100600 ms MarkObjects: 3.557900 ms  DeleteObjects: 0.035200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.007273 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.12 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.321 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1322ms)
+		BeginReloadAssembly (185ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (10ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (40ms)
+		EndReloadAssembly (979ms)
+			LoadAssemblies (115ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (246ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (58ms)
+			SetupLoadedEditorAssemblies (422ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (78ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (44ms)
+				AfterProcessingInitializeOnLoad (13ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (13ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 5.82 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.09 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2264.
+Memory consumption went from 79.1 MB to 79.0 MB.
+Total: 3.285700 ms (FindLiveObjects: 0.197800 ms CreateObjectMapping: 0.081200 ms MarkObjects: 2.974500 ms  DeleteObjects: 0.031000 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005129 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.95 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.15 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.262 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1263ms)
+		BeginReloadAssembly (174ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (36ms)
+		EndReloadAssembly (928ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (215ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (424ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (22ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (72ms)
+				ProcessInitializeOnLoadAttributes (274ms)
+				ProcessInitializeOnLoadMethodAttributes (42ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (8ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 10.16 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.6 KB). Loaded Objects now: 2266.
+Memory consumption went from 79.1 MB to 79.1 MB.
+Total: 4.169400 ms (FindLiveObjects: 0.246700 ms CreateObjectMapping: 0.107000 ms MarkObjects: 3.775800 ms  DeleteObjects: 0.038300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.005426 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 1.06 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.20 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.274 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1275ms)
+		BeginReloadAssembly (166ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (9ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (41ms)
+		EndReloadAssembly (979ms)
+			LoadAssemblies (100ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (273ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (407ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (74ms)
+				ProcessInitializeOnLoadAttributes (250ms)
+				ProcessInitializeOnLoadMethodAttributes (48ms)
+				AfterProcessingInitializeOnLoad (14ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 9.38 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.16 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2268.
+Memory consumption went from 79.1 MB to 79.1 MB.
+Total: 4.100900 ms (FindLiveObjects: 0.181400 ms CreateObjectMapping: 0.093100 ms MarkObjects: 3.750500 ms  DeleteObjects: 0.074300 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004950 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.80 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.11 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.342 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1343ms)
+		BeginReloadAssembly (204ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (7ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (50ms)
+		EndReloadAssembly (980ms)
+			LoadAssemblies (114ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (226ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (48ms)
+			SetupLoadedEditorAssemblies (425ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (21ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (267ms)
+				ProcessInitializeOnLoadMethodAttributes (41ms)
+				AfterProcessingInitializeOnLoad (12ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (9ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 7.97 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.6 KB). Loaded Objects now: 2270.
+Memory consumption went from 79.1 MB to 79.1 MB.
+Total: 3.987300 ms (FindLiveObjects: 0.353200 ms CreateObjectMapping: 0.166300 ms MarkObjects: 3.417700 ms  DeleteObjects: 0.047100 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.004517 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for WindowsStandalone target not found
+Refreshing native plugins compatible for Editor in 0.79 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.10 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  1.277 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1278ms)
+		BeginReloadAssembly (175ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (38ms)
+		EndReloadAssembly (964ms)
+			LoadAssemblies (111ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (253ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (56ms)
+			SetupLoadedEditorAssemblies (400ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (18ms)
+				SetLoadedEditorAssemblies (1ms)
+				RefreshPlugins (1ms)
+				BeforeProcessingInitializeOnLoad (82ms)
+				ProcessInitializeOnLoadAttributes (252ms)
+				ProcessInitializeOnLoadMethodAttributes (35ms)
+				AfterProcessingInitializeOnLoad (11ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (7ms)
+Platform modules already initialized, skipping
+Switching build target platform(19) subTarget(0) extendedPlatform(0) -> platform(13) subTarget(0) extendedPlatform(0)
+Refreshing native plugins compatible for Editor in 5.45 ms, found 4 plugins.
+Preloading 1 native plugins for Editor in 0.07 ms.
+Unloading 1794 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 43 unused Assets / (25.7 KB). Loaded Objects now: 2272.
+Memory consumption went from 79.1 MB to 79.1 MB.
+Total: 3.412100 ms (FindLiveObjects: 0.190100 ms CreateObjectMapping: 0.077900 ms MarkObjects: 3.107000 ms  DeleteObjects: 0.035200 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:video-codec-MediaFoundation-h265: 746d11721c4dcdbdad8f713fa42b33f4 -> 
+  custom:graphics/normal-map-encoding: 02000000000000000000000000000000 -> 01000000000000000000000000000000
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
