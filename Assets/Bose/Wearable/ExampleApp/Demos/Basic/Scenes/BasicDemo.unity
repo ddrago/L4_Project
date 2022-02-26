@@ -492,6 +492,52 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2456315683020133959, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
   m_PrefabInstance: {fileID: 776637976}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &893741112
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 893741114}
+  - component: {fileID: 893741113}
+  m_Layer: 0
+  m_Name: Spawner
+  m_TagString: Untagged
+  m_Icon: {fileID: -964228994112308473, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &893741113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893741112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7781c9698466d0c40ab689488646c936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MenuItemPrefab: {fileID: 7349211355736870586, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
+  Quantity: 3
+--- !u!4 &893741114
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 893741112}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 15}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &915037084
 GameObject:
   m_ObjectHideFlags: 0
@@ -1499,6 +1545,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: CubeSound
     clip: {fileID: 8300000, guid: df160f2b97dd94d5bbd28a63d257177f, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Test1
+    clip: {fileID: 8300000, guid: 9237b0e49a7fb7a4981cb909a5663bdf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: Test2
+    clip: {fileID: 8300000, guid: 5571e8c0cf23fbd46a1ca226a6277e98, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}

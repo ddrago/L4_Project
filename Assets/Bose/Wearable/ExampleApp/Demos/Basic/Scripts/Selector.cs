@@ -58,25 +58,8 @@ public class Selector : MonoBehaviour
         reader.Close();
     }
 
-    public static void LogOnCSV(string interactionType, string time, long timeMS, string item)
+    public static void InitLogging()
     {
-        /*        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/log.csv";
-                StreamWriter writer = new StreamWriter(path, append: true);
-
-                writer.WriteLine(interactionType + "," + time + "," + (timeMS).ToString() + "," + item);
-                //writer.Flush();
-                writer.Close();*/
-        System.IO.File.AppendAllLines(filename, new string[] {
-            interactionType + "," + time + "," + (timeMS).ToString() + "," + item
-        });
-    }
-
-    private void Awake()
-    {
-        _firstContact = true;
-        _firstContactName = "";
-
-        //Set the path to the logging file as the persistent data folders in the android system
         filename = Application.persistentDataPath + "/" + filename;
 
         System.IO.FileInfo theSourceFile = new System.IO.FileInfo(filename);
@@ -91,8 +74,22 @@ public class Selector : MonoBehaviour
             string text = reader.ReadLine();
             print(text);
         }
+    }
 
-        /*Debug.Log(getApplicationInfo().dataDir);*/
+    public static void LogOnCSV(string interactionType, string time, long timeMS, string item)
+    {
+        System.IO.File.AppendAllLines(filename, new string[] {
+            interactionType + "," + time + "," + (timeMS).ToString() + "," + item
+        });
+    }
+
+    private void Awake()
+    {
+        _firstContact = true;
+        _firstContactName = "";
+
+        //Set the path to the logging file as the persistent data folders in the android system
+        InitLogging();
 
         _firstContact = true;
 
@@ -110,6 +107,8 @@ public class Selector : MonoBehaviour
 
             if (_firstContact || (_hitInfo.collider.gameObject.name != _firstContactName))
             {
+                //HERE HAPPENS WHEN THE USER HOVERS WITH THEIR GAZE UPON SOMETHING IN THE SCENE
+
                 // Get the renderer of the object hit by the raycasting
                 Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
                 target_renderer.material.color = new Color(0, 255, 0);
@@ -117,7 +116,17 @@ public class Selector : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
                 print("SELECTION");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-                
+
+                string objectName = _hitInfo.collider.gameObject.name;
+                if (objectName == "Item1")
+                {
+                    FindObjectOfType<AudioManager>().Play("Test1");
+                }
+                else if (objectName == "Item2")
+                {
+                    FindObjectOfType<AudioManager>().Play("Test2");
+                }
+
                 // Reset/update the flags
                 _firstContact = false;
                 _firstContactName = _hitInfo.collider.gameObject.name;

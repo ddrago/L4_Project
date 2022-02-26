@@ -347,6 +347,7 @@
 "Assets/Bose/Wearable/ExampleApp/Demos/Advanced/Scripts/TargetSFX.cs"
 "Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scripts/BasicDemoUIPanel.cs"
 "Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scripts/Selector.cs"
+"Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scripts/Spawner.cs"
 "Assets/Bose/Wearable/ExampleApp/Demos/Basic/Scripts/Test.cs"
 "Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Scripts/GestureDemoUIPanel.cs"
 "Assets/Bose/Wearable/ExampleApp/Demos/Gesture/Scripts/GestureDisplay.cs"
