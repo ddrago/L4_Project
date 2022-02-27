@@ -6,19 +6,16 @@ public class Spawner : MonoBehaviour
 {
     public GameObject MenuItemPrefab;
     public int Quantity;
+    public int Radius = 40;
 
     // Start is called before the first frame update
     void Start()
     {
-        int radius = 20;
         float ratio = 1f / Quantity;
-        // Range is:
-        //          x: -20 -> 20
-        //          y: 0
-        for (int i = 0; i < Quantity; i++)
+
+        for (int i = 1-Quantity; i <= Quantity-1; i+=2)
         {
-            Vector3 pos = new Vector3(radius*ratio*(i-1), 0, 15);
-            print(ratio);
+            Vector3 pos = new Vector3(i*ratio*Radius, 0, 15);
             GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
         }
 

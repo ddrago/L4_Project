@@ -163,6 +163,7 @@
     <Compile Include="Assets\Bose\Wearable\Modules\Connection\Scripts\Connection\WearableDeviceDisplayButton.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Debugging\Scripts\UI\SensorRateDebugUIWindow.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Connection\Scripts\Connection\WearableConnectUIResult.cs" />
+    <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Basic\Scripts\Spawner.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Connection\Scripts\Connection\WearableConnectDisplayBase.cs" />
     <Compile Include="Assets\Bose\Wearable\Modules\Connection\Scripts\Connection\WearableConnectUIPanel.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\PlatformTools.cs" />
@@ -203,7 +204,6 @@
     <Compile Include="Assets\Bose\Wearable\Scripts\Requirements\WearableRequirement.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\ConnectionStatus.cs" />
     <Compile Include="Assets\Bose\Wearable\Scripts\Hardware\ProductId.cs" />
-    <Compile Include="Assets\Bose\Wearable\ExampleApp\Demos\Basic\Scripts\Spawner.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Bose\Wearable\Modules\Debugging\Fonts\Nova_Mono\OFL.txt" />
