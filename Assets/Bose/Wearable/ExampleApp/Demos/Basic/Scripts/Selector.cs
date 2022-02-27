@@ -23,21 +23,9 @@ public class Selector : MonoBehaviour
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
             string objectName = _hitInfo.collider.gameObject.name;
-            if (objectName == "Item1")
-            {
-                FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-            } 
-            else if (objectName == "Item2")
-            {
-                FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-            }
-            else
-            {
-                
-                LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
-            }
+
+            FindObjectOfType<AudioManager>().Play("MenuButtonPress");
+            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
         }
         else
         {

@@ -70,6 +70,7 @@ ScriptsOnlyBuild:
     - Bose.Wearable.WearableUIColorPalette
     - Bose.Wearable.WearableUIColorStyleId
     - Selector
+    - Spawner
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
     Unity.TextMeshPro.dll:
@@ -248,17 +249,17 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3520}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 4374}
+      Script: {instanceID: 4376}
     - Class: 114
-      Script: {instanceID: 4378}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4440}
+      Script: {instanceID: 4442}
     - Class: 114
-      Script: {instanceID: 4930}
+      Script: {instanceID: 4932}
     - Class: 114
-      Script: {instanceID: 5098}
+      Script: {instanceID: 5100}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -349,9 +350,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3968}
     - Class: 114
-      Script: {instanceID: 4516}
+      Script: {instanceID: 4174}
     - Class: 114
-      Script: {instanceID: 4822}
+      Script: {instanceID: 4518}
+    - Class: 114
+      Script: {instanceID: 4824}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -452,23 +455,23 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4102}
     - Class: 114
-      Script: {instanceID: 4250}
+      Script: {instanceID: 4252}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 4378}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4512}
+      Script: {instanceID: 4514}
     - Class: 114
-      Script: {instanceID: 4738}
+      Script: {instanceID: 4740}
     - Class: 114
-      Script: {instanceID: 4840}
+      Script: {instanceID: 4842}
     - Class: 114
-      Script: {instanceID: 4988}
+      Script: {instanceID: 4990}
     - Class: 114
-      Script: {instanceID: 5040}
+      Script: {instanceID: 5042}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 5106}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -549,11 +552,11 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 3730}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 4378}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 5104}
+      Script: {instanceID: 5106}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -626,7 +629,7 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4132}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 124
@@ -747,25 +750,25 @@ ScriptsOnlyBuild:
     - Class: 114
       Script: {instanceID: 4132}
     - Class: 114
-      Script: {instanceID: 4198}
+      Script: {instanceID: 4200}
     - Class: 114
-      Script: {instanceID: 4274}
+      Script: {instanceID: 4276}
     - Class: 114
-      Script: {instanceID: 4290}
+      Script: {instanceID: 4292}
     - Class: 114
-      Script: {instanceID: 4378}
+      Script: {instanceID: 4380}
     - Class: 114
-      Script: {instanceID: 4394}
+      Script: {instanceID: 4396}
     - Class: 114
-      Script: {instanceID: 4564}
+      Script: {instanceID: 4566}
     - Class: 114
-      Script: {instanceID: 4570}
+      Script: {instanceID: 4572}
     - Class: 114
-      Script: {instanceID: 4580}
+      Script: {instanceID: 4582}
     - Class: 114
-      Script: {instanceID: 4696}
+      Script: {instanceID: 4698}
     - Class: 114
-      Script: {instanceID: 4960}
+      Script: {instanceID: 4962}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -1635,6 +1638,12 @@ ScriptsOnlyBuild:
     assemblyName: UnityEngine.UI.dll
     namespaceName: UnityEngine.UI
     className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: ba748961046808e976dac35eb5421d1f
+    assemblyName: Bose.Wearable.dll
+    namespaceName: 
+    className: Spawner
   - hash:
       serializedVersion: 2
       Hash: ca3c5079cece23ac0f92cbd3832e8692
