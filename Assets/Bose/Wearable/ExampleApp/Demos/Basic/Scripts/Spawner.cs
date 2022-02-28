@@ -38,8 +38,8 @@ public class Spawner : MonoBehaviour
                     menuItemTest.name = "Item" + nameNum;
                     nameNum++;
                 }
-
                 break;
+
             case Layout.vertical:
 
                 for (int i = Quantity - 1; i >= 1 - Quantity; i -= 2)
@@ -51,10 +51,30 @@ public class Spawner : MonoBehaviour
                     menuItemTest.name = "Item" + nameNum;
                     nameNum++;
                 }
-
                 break;
+
             case Layout.pie:
-                print("pie");
+
+                for (int i = 0; i < Quantity; ++i)
+                {
+                    float theta = (-2 * Mathf.PI / Quantity) * i; //the - helps make the order of the items be clock-wise
+                    theta += Mathf.PI/4;  // shift the angle by 45 degrees counter-clockwise
+                    print("theta: " + theta);
+                    
+                    float x = Mathf.Cos(theta);
+                    float y = Mathf.Sin(theta);
+                    float r = Radius / (Mathf.Sqrt(2));
+                    print("x: " + x);
+                    print("y: " + y);
+
+
+                    Vector3 pos = new Vector3(x * r, y * r, 15);
+                    GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
+
+                    menuItemTest.transform.localScale = new Vector3(Radius, Radius, 1);
+                    menuItemTest.name = "Item" + nameNum;
+                    nameNum++;
+                }
                 break;
         }
     }
