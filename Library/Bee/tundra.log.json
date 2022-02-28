@@ -244,7 +244,7 @@
 {"msg":"noderesult","processed_node_count":215,"number_of_nodes_ever_queued":240,"annotation":"Csc Library/Bee/artifacts/1300b0aE.dag/Bose.Wearable.dll (+2 others)","index":145,"exitcode":0,"outputfile":"Library\\Bee\\artifacts\\1300b0aE.dag\\Bose.Wearable.dll"}
 {"msg":"inputSignatureChanged","annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.pdb","index":220,"changes":[{"key":"InputFileList","value":["Library\\Bee\\artifacts\\1300b0aE.dag\\Bose.Wearable.pdb"],"oldvalue":[],"dependency":"explicit"}]}
 {"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.pdb","index":220}
-{"msg":"noderesult","processed_node_count":225,"number_of_nodes_ever_queued":240,"annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.pdb","index":220,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Bose.Wearable.pdb"}
+{"msg":"noderesult","processed_node_count":231,"number_of_nodes_ever_queued":240,"annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.pdb","index":220,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Bose.Wearable.pdb"}
 {"msg":"inputSignatureChanged","annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.dll","index":219,"changes":[{"key":"InputFileList","value":["Library\\Bee\\artifacts\\1300b0aE.dag\\Bose.Wearable.dll"],"oldvalue":[],"dependency":"explicit"}]}
 {"msg":"runNodeAction","annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.dll","index":219}
 {"msg":"noderesult","processed_node_count":238,"number_of_nodes_ever_queued":240,"annotation":"CopyFiles Library/ScriptAssemblies/Bose.Wearable.dll","index":219,"exitcode":0,"outputfile":"Library\\ScriptAssemblies\\Bose.Wearable.dll"}

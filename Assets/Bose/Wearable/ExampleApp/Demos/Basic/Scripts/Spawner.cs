@@ -41,7 +41,17 @@ public class Spawner : MonoBehaviour
 
                 break;
             case Layout.vertical:
-                print("vertical");
+
+                for (int i = Quantity - 1; i >= 1 - Quantity; i -= 2)
+                {
+                    Vector3 pos = new Vector3(0, i * ratio * Radius, 15);
+                    GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
+
+                    menuItemTest.transform.localScale = new Vector3(Radius, itemSize, 1);
+                    menuItemTest.name = "Item" + nameNum;
+                    nameNum++;
+                }
+
                 break;
             case Layout.pie:
                 print("pie");
