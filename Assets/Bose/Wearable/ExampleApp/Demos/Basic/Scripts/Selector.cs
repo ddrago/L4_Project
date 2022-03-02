@@ -18,6 +18,56 @@ public class Selector : MonoBehaviour
 
     private static string filename = "log.csv";
 
+    // Variables for the coach
+    private static Boolean startCoachCountdown = false;
+    private static float countdown;
+    private static float coachCountdownDuration = 2;
+
+    public void Select()
+    {
+        // Deal with the user's gaze
+        Ray ray = new Ray(transform.position, transform.forward);
+        _ray = ray;
+
+        if (Physics.Raycast(_ray, out _hitInfo, 100))
+        {
+            Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);
+
+            if (_firstContact || (_hitInfo.collider.gameObject.name != _firstContactName))
+            {
+                //HERE HAPPENS WHEN THE USER HOVERS WITH THEIR GAZE UPON SOMETHING IN THE SCENE
+
+                // Get the renderer of the object hit by the raycasting
+                Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
+                target_renderer.material.color = new Color(0, 255, 0);
+
+                FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
+                print("SELECTION");
+                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+
+                string objectName = _hitInfo.collider.gameObject.name;
+                if (objectName == "Item1")
+                {
+                    FindObjectOfType<AudioManager>().Play("Test1");
+                }
+                else if (objectName == "Item2")
+                {
+                    FindObjectOfType<AudioManager>().Play("Test2");
+                }
+
+                // Reset/update the flags
+                _firstContact = false;
+                _firstContactName = _hitInfo.collider.gameObject.name;
+
+            }
+        }
+        else
+        {
+            Debug.DrawLine(_ray.origin, _ray.origin + _ray.direction * 100, Color.red);
+            _firstContact = true;
+        }
+    }
+
     public static void Press()
     {
         if (Physics.Raycast(_ray, out _hitInfo, 100))
@@ -26,6 +76,9 @@ public class Selector : MonoBehaviour
 
             FindObjectOfType<AudioManager>().Play("MenuButtonPress");
             LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+            print("PRESS");
+
+            startCoachCountdown = true;
         }
         else
         {
@@ -83,48 +136,31 @@ public class Selector : MonoBehaviour
 
     }
 
+    private void Start()
+    {
+        countdown = coachCountdownDuration;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        Ray ray = new Ray(transform.position, transform.forward);
-        _ray = ray;
+        Select();
 
-        if (Physics.Raycast(_ray, out _hitInfo, 100))
+        // Deal with the coach countdown
+        if (startCoachCountdown == true)
         {
-            Debug.DrawLine(_ray.origin, _hitInfo.point, Color.green);
-
-            if (_firstContact || (_hitInfo.collider.gameObject.name != _firstContactName))
+            if(countdown > 0)
             {
-                //HERE HAPPENS WHEN THE USER HOVERS WITH THEIR GAZE UPON SOMETHING IN THE SCENE
-
-                // Get the renderer of the object hit by the raycasting
-                Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
-                target_renderer.material.color = new Color(0, 255, 0);
-
-                FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
-                print("SELECTION");
-                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks/TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-
-                string objectName = _hitInfo.collider.gameObject.name;
-                if (objectName == "Item1")
-                {
-                    FindObjectOfType<AudioManager>().Play("Test1");
-                }
-                else if (objectName == "Item2")
-                {
-                    FindObjectOfType<AudioManager>().Play("Test2");
-                }
-
-                // Reset/update the flags
-                _firstContact = false;
-                _firstContactName = _hitInfo.collider.gameObject.name;
-
+                countdown -= Time.deltaTime;
             }
-        }
-        else
-        {
-            Debug.DrawLine(_ray.origin, _ray.origin + _ray.direction * 100, Color.red);
-            _firstContact = true;
+            else
+            {
+                print("NOW PRESS AUDIO");
+
+                startCoachCountdown = false;
+                FindObjectOfType<AudioManager>().Play("NowPress");
+                countdown = coachCountdownDuration;
+            }
         }
     }
 }
