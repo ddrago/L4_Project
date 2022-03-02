@@ -18,10 +18,7 @@ public class Selector : MonoBehaviour
 
     private static string filename = "log.csv";
 
-    // Variables for the coach
-    private static Boolean startCoachCountdown = false;
-    private static float countdown;
-    private static float coachCountdownDuration = 2;
+    private static Coach coach;
 
     public void Select()
     {
@@ -78,7 +75,7 @@ public class Selector : MonoBehaviour
             LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
             print("PRESS");
 
-            startCoachCountdown = true;
+            coach.startCoachCountdown = true;
         }
         else
         {
@@ -134,11 +131,8 @@ public class Selector : MonoBehaviour
 
         _firstContact = true;
 
-    }
-
-    private void Start()
-    {
-        countdown = coachCountdownDuration;
+        //Set up the coach
+        coach = new Coach(1);
     }
 
     // Update is called once per frame
@@ -146,7 +140,9 @@ public class Selector : MonoBehaviour
     {
         Select();
 
-        // Deal with the coach countdown
+        coach.afterCountdownCoach();
+
+/*        // Deal with the coach countdown
         if (startCoachCountdown == true)
         {
             if(countdown > 0)
@@ -161,6 +157,41 @@ public class Selector : MonoBehaviour
                 FindObjectOfType<AudioManager>().Play("NowPress");
                 countdown = coachCountdownDuration;
             }
+        }*/
+    }
+
+    public class Coach
+    {
+        public Boolean startCoachCountdown;
+        private static float countdown;
+        private static float coachCountdownDuration;
+
+        public Coach(float countdownDuration)
+        {
+            startCoachCountdown = false;
+            countdown = coachCountdownDuration;
+            coachCountdownDuration = countdownDuration;
+        }
+
+        public void afterCountdownCoach()
+        {
+            // Deal with the coach countdown
+            if (startCoachCountdown == true)
+            {
+                if (countdown > 0)
+                {
+                    countdown -= Time.deltaTime;
+                }
+                else
+                {
+                    print("NOW PRESS AUDIO");
+
+                    startCoachCountdown = false;
+                    FindObjectOfType<AudioManager>().Play("NowPress");
+                    countdown = coachCountdownDuration;
+                }
+            }
         }
     }
+
 }
