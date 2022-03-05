@@ -31,4 +31,30 @@ public class AudioManager : MonoBehaviour
         //Debug.Log("Now playing: " + s.name);
         s.source.Play();
     }
+
+    public void PlayAfter(string name, float delay)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound file " + name + " not found!");
+            return;
+        }
+
+        s.source.PlayDelayed(delay);
+    }
+
+    public float GetDuration(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+        {
+            Debug.LogWarning("Sound file " + name + " not found!");
+            return 0;
+        }
+        Debug.LogWarning(s.source.time);
+        // Why the fuck is it zero
+
+        return s.source.time;
+    }
 }

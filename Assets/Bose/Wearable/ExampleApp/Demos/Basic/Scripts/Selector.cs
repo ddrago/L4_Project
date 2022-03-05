@@ -13,9 +13,11 @@ public class Selector : MonoBehaviour
 
     private static RaycastHit _hitInfo;
 
+    //These two help make sure that the selection doesn't repeat every frame
     private static bool _firstContact;
     private static string _firstContactName;
 
+    //The name of the logging file - MODIFY FOR EACH PARTICIPANT
     private static string filename = "log.csv";
 
     private static Coach coach;
@@ -141,30 +143,16 @@ public class Selector : MonoBehaviour
         Select();
 
         coach.afterCountdownCoach();
-
-/*        // Deal with the coach countdown
-        if (startCoachCountdown == true)
-        {
-            if(countdown > 0)
-            {
-                countdown -= Time.deltaTime;
-            }
-            else
-            {
-                print("NOW PRESS AUDIO");
-
-                startCoachCountdown = false;
-                FindObjectOfType<AudioManager>().Play("NowPress");
-                countdown = coachCountdownDuration;
-            }
-        }*/
     }
 
+
+    //This class give the percitipant timely audio feedback on what menu item to select next.
     public class Coach
     {
         public Boolean startCoachCountdown;
         private static float countdown;
         private static float coachCountdownDuration;
+        public static string[] instructions = {"Music", "Music", "News", "News", "Podcasts", "Podcasts", "Sports", "Sports"};
 
         public Coach(float countdownDuration)
         {
@@ -186,9 +174,11 @@ public class Selector : MonoBehaviour
                 {
                     print("NOW PRESS AUDIO");
 
-                    startCoachCountdown = false;
                     FindObjectOfType<AudioManager>().Play("NowPress");
+                    float delay = FindObjectOfType<AudioManager>().GetDuration("NowPress");
+                    FindObjectOfType<AudioManager>().PlayAfter("Music", delay);
                     countdown = coachCountdownDuration;
+                    startCoachCountdown = false;
                 }
             }
         }
