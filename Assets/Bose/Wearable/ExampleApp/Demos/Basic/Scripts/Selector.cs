@@ -175,8 +175,8 @@ public class Selector : MonoBehaviour
                     print("NOW PRESS AUDIO");
 
                     FindObjectOfType<AudioManager>().Play("NowPress");
-                    float delay = FindObjectOfType<AudioManager>().GetDuration("NowPress");
-                    FindObjectOfType<AudioManager>().PlayAfter("Music", delay);
+                    //float delay = FindObjectOfType<AudioManager>().GetDuration("NowPress");
+                    FindObjectOfType<AudioManager>().PlayAfter("Music", 1);
                     countdown = coachCountdownDuration;
                     startCoachCountdown = false;
                 }
