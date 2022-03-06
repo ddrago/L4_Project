@@ -167,16 +167,33 @@ public class Selector : MonoBehaviour
 
         public static System.Random rnd = new System.Random();
 
+        public static string instruction_log_filename = "instructions.txt";
+
 
         public Coach(float countdownDuration)
         {
-            print("");
             startCoachCountdown = false;
             countdown = coachCountdownDuration;
             coachCountdownDuration = countdownDuration;
 
             instructions = instructions_to_give.OrderBy(a => rnd.Next()).ToList();
-            print(string.Join(",", instructions.ToArray()));
+            //print(string.Join(",", instructions.ToArray()));
+
+            LogInstructions();
+        }
+
+        public void LogInstructions()
+        {
+            instruction_log_filename = Application.persistentDataPath + "/" + instruction_log_filename;
+
+            System.IO.FileInfo theSourceFile = new System.IO.FileInfo(instruction_log_filename);
+            System.IO.File.WriteAllText(instruction_log_filename, string.Join(",", instructions.ToArray()));
+            if (System.IO.File.Exists(instruction_log_filename))
+            {
+                System.IO.StreamReader reader = theSourceFile.OpenText();
+                string text = reader.ReadLine();
+                print(text);
+            }
         }
 
         public string Give_instruction()
