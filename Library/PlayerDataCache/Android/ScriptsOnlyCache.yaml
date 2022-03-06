@@ -1640,7 +1640,7 @@ ScriptsOnlyBuild:
     className: Mask
   - hash:
       serializedVersion: 2
-      Hash: 6b9a8cfcf2e39e9dc098615d49338aa3
+      Hash: 3357a95e4010c2768ac86304ad892f0e
     assemblyName: Bose.Wearable.dll
     namespaceName: 
     className: Spawner

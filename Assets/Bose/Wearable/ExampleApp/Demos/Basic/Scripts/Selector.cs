@@ -24,6 +24,9 @@ public class Selector : MonoBehaviour
 
     private static Coach coach;
 
+    //This makes sure the Selector class can identify the start of the experiment
+    private static Boolean isExperimentStarted;
+
     public void Select()
     {
         // Deal with the user's gaze
@@ -43,7 +46,7 @@ public class Selector : MonoBehaviour
                 target_renderer.material.color = new Color(0, 255, 0);
 
                 FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
-                print("SELECTION");
+                //print("SELECTION");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
 
                 FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
@@ -63,13 +66,22 @@ public class Selector : MonoBehaviour
 
     public static void Press()
     {
+        //The experiment starts when the first press is done!
+        if (isExperimentStarted == false)
+        {
+            isExperimentStarted = true;
+            FindObjectOfType<AudioManager>().Play("MenuButtonPress");
+            LogOnCSV("[STARTING PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+            coach.startCoachCountdown = true;
+
+            return;
+        }
+
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
-            string objectName = _hitInfo.collider.gameObject.name;
-
             FindObjectOfType<AudioManager>().Play("MenuButtonPress");
             LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-            print("PRESS");
+            //print("PRESS");
 
             coach.startCoachCountdown = true;
         }
@@ -129,6 +141,9 @@ public class Selector : MonoBehaviour
 
         //Set up the coach
         coach = new Coach(1);
+
+        //The experiment has not started yet
+        isExperimentStarted = false;
     }
 
     // Update is called once per frame
@@ -199,6 +214,7 @@ public class Selector : MonoBehaviour
                     else
                     {
                         //maybe play a "End of Experiment" sound?
+                        LogOnCSV("[END]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
                         Debug.Log("End of experiment!");
                     }
                     countdown = coachCountdownDuration;
