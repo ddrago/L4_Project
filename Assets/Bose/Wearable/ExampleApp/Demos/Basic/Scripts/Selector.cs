@@ -174,10 +174,17 @@ public class Selector : MonoBehaviour
 
         public string Give_instruction()
         {
-            //TODO do something about going over 8 instructions
-            string next_instruction = instructions[0];
-            instructions.RemoveAt(0);
-            return next_instruction;
+            int c = instructions.Count();
+            if ( c > 0) 
+            {
+                string next_instruction = instructions[0];
+                instructions.RemoveAt(0);
+                return next_instruction;
+            }
+            else
+            {
+                return null;
+            }
         }
 
         public void afterCountdownCoach()
@@ -191,10 +198,17 @@ public class Selector : MonoBehaviour
                 }
                 else
                 {
-                    print("NOW PRESS AUDIO");
-
-                    FindObjectOfType<AudioManager>().Play("NowPress");
-                    FindObjectOfType<AudioManager>().PlayAfter("Music", 1);
+                    string next_instruction = Give_instruction();
+                    if (next_instruction is not null)
+                    {
+                        FindObjectOfType<AudioManager>().Play("NowPress");
+                        FindObjectOfType<AudioManager>().PlayAfter(next_instruction, 1);
+                    }
+                    else
+                    {
+                        //maybe play a "End of Experiment" sound?
+                        Debug.Log("End of experiment!");
+                    }
                     countdown = coachCountdownDuration;
                     startCoachCountdown = false;
                 }
