@@ -7,6 +7,7 @@ public class Spawner : MonoBehaviour
     public GameObject MenuItemPrefab;
     public int Quantity;
     public int Radius = 40;
+    public string[] menu_item_names = new string[] { "Music", "News", "Podcasts", "Sports"};
 
     public enum Layout
     {
@@ -23,7 +24,7 @@ public class Spawner : MonoBehaviour
         float ratio = 1f / Quantity;
         float itemSize = (Radius * 2) / Quantity;
 
-        int nameNum = 1;
+        int name_index = 0;
 
         switch (layout)
         {
@@ -35,8 +36,8 @@ public class Spawner : MonoBehaviour
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
 
                     menuItemTest.transform.localScale = new Vector3(itemSize, Radius, 1);
-                    menuItemTest.name = "Item" + nameNum;
-                    nameNum++;
+                    menuItemTest.name = menu_item_names[name_index];
+                    name_index++;
                 }
                 break;
 
@@ -48,8 +49,8 @@ public class Spawner : MonoBehaviour
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
 
                     menuItemTest.transform.localScale = new Vector3(Radius, itemSize, 1);
-                    menuItemTest.name = "Item" + nameNum;
-                    nameNum++;
+                    menuItemTest.name = menu_item_names[name_index];
+                    name_index++;
                 }
                 break;
 
@@ -68,8 +69,8 @@ public class Spawner : MonoBehaviour
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
 
                     menuItemTest.transform.localScale = new Vector3(Radius, Radius, 1);
-                    menuItemTest.name = "Item" + nameNum;
-                    nameNum++;
+                    menuItemTest.name = menu_item_names[name_index];
+                    name_index++;
                 }
                 break;
         }

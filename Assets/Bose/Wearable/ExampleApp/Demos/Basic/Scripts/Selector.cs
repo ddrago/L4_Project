@@ -46,15 +46,7 @@ public class Selector : MonoBehaviour
                 print("SELECTION");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
 
-                string objectName = _hitInfo.collider.gameObject.name;
-                if (objectName == "Item1")
-                {
-                    FindObjectOfType<AudioManager>().Play("Test1");
-                }
-                else if (objectName == "Item2")
-                {
-                    FindObjectOfType<AudioManager>().Play("Test2");
-                }
+                FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
 
                 // Reset/update the flags
                 _firstContact = false;
@@ -155,7 +147,7 @@ public class Selector : MonoBehaviour
         private static float countdown;
         private static float coachCountdownDuration;
 
-        public static List<string> instructions_to_give = new List<string>(new string[] {"Music", "Music", "News", "News", "Podcasts", "Podcasts", "Sports", "Sports"});
+        public static List<string> instructions_to_give = new List<string>(new string[] { "Music", "News", "Podcasts", "Sports", "Music", "News", "Podcasts", "Sports" });
         public static List<string> instructions = new List<string>();
 
         public static System.Random rnd = new System.Random();
