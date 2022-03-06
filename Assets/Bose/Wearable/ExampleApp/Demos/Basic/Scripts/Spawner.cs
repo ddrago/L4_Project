@@ -59,14 +59,10 @@ public class Spawner : MonoBehaviour
                 {
                     float theta = (-2 * Mathf.PI / Quantity) * i; //the - helps make the order of the items be clock-wise
                     theta += Mathf.PI/4;  // shift the angle by 45 degrees counter-clockwise
-                    print("theta: " + theta);
                     
                     float x = Mathf.Cos(theta);
                     float y = Mathf.Sin(theta);
                     float r = Radius / (Mathf.Sqrt(2));
-                    print("x: " + x);
-                    print("y: " + y);
-
 
                     Vector3 pos = new Vector3(x * r, y * r, 15);
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);

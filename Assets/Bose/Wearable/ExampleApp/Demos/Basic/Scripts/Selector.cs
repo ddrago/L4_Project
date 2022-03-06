@@ -1,8 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using System;
 
+using System;
+using static System.Random;
+using System.Linq;
 using System.IO;
 
 public class Selector : MonoBehaviour
@@ -152,13 +154,30 @@ public class Selector : MonoBehaviour
         public Boolean startCoachCountdown;
         private static float countdown;
         private static float coachCountdownDuration;
-        public static string[] instructions = {"Music", "Music", "News", "News", "Podcasts", "Podcasts", "Sports", "Sports"};
+
+        public static List<string> instructions_to_give = new List<string>(new string[] {"Music", "Music", "News", "News", "Podcasts", "Podcasts", "Sports", "Sports"});
+        public static List<string> instructions = new List<string>();
+
+        public static System.Random rnd = new System.Random();
+
 
         public Coach(float countdownDuration)
         {
+            print("");
             startCoachCountdown = false;
             countdown = coachCountdownDuration;
             coachCountdownDuration = countdownDuration;
+
+            instructions = instructions_to_give.OrderBy(a => rnd.Next()).ToList();
+            print(string.Join(",", instructions.ToArray()));
+        }
+
+        public string Give_instruction()
+        {
+            //TODO do something about going over 8 instructions
+            string next_instruction = instructions[0];
+            instructions.RemoveAt(0);
+            return next_instruction;
         }
 
         public void afterCountdownCoach()
@@ -175,7 +194,6 @@ public class Selector : MonoBehaviour
                     print("NOW PRESS AUDIO");
 
                     FindObjectOfType<AudioManager>().Play("NowPress");
-                    //float delay = FindObjectOfType<AudioManager>().GetDuration("NowPress");
                     FindObjectOfType<AudioManager>().PlayAfter("Music", 1);
                     countdown = coachCountdownDuration;
                     startCoachCountdown = false;
