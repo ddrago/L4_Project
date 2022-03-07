@@ -530,7 +530,7 @@ MonoBehaviour:
   - News
   - Podcasts
   - Sports
-  layout: 0
+  layout: 2
 --- !u!4 &893741114
 Transform:
   m_ObjectHideFlags: 0
@@ -582,7 +582,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1}
+  m_AnchoredPosition: {x: 0, y: 475}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &915037086
@@ -1685,6 +1685,16 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: NowPress
     clip: {fileID: 8300000, guid: 8bfb62d764f2f604887e51ccf4cb6ef3, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: ExperimentEnd
+    clip: {fileID: 8300000, guid: 29f8f774977e7614a842d3977cde5931, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+  - name: ExperimentStart
+    clip: {fileID: 8300000, guid: 02e8bad4b6fd567449db8f37b09004a6, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}

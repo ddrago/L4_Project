@@ -26,6 +26,7 @@ public class Selector : MonoBehaviour
 
     //This makes sure the Selector class can identify the start of the experiment
     private static Boolean isExperimentStarted;
+    private static Boolean isWelcomeAudioDone;
 
     public void Select()
     {
@@ -149,6 +150,7 @@ public class Selector : MonoBehaviour
 
         //The experiment has not started yet
         isExperimentStarted = false;
+        isWelcomeAudioDone = false;
     }
 
     // Update is called once per frame
@@ -230,12 +232,23 @@ public class Selector : MonoBehaviour
                     string next_instruction = Give_instruction();
                     if (next_instruction is not null)
                     {
-                        FindObjectOfType<AudioManager>().Play("NowPress");
-                        FindObjectOfType<AudioManager>().PlayAfter(next_instruction, 1);
+                        if (isWelcomeAudioDone)
+                        {
+                            FindObjectOfType<AudioManager>().Play("NowPress");
+                            FindObjectOfType<AudioManager>().PlayAfter(next_instruction, 1);
+                        }
+                        else
+                        {
+                            FindObjectOfType<AudioManager>().Play("ExperimentStart");
+                            FindObjectOfType<AudioManager>().PlayAfter("NowPress", 2.5f);
+                            FindObjectOfType<AudioManager>().PlayAfter(next_instruction, 3.5f);
+                            isWelcomeAudioDone = true;
+
+                        }
                     }
                     else
                     {
-                        //maybe play a "End of Experiment" sound?
+                        FindObjectOfType<AudioManager>().Play("ExperimentEnd");
                         LogOnCSV("[END]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
                         Debug.Log("End of experiment!");
                     }
