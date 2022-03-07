@@ -45,11 +45,16 @@ public class Selector : MonoBehaviour
                 Renderer target_renderer = _hitInfo.collider.gameObject.GetComponent<Renderer>();
                 target_renderer.material.color = new Color(0, 255, 0);
 
-                FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
+                // There is an object positioned at the center of a participant's point of view that should 
+                // Allow to just look without being bombarded with feedback.
+                if (_hitInfo.collider.gameObject.name != "NoFeedbackZone")
+                {
+                    FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
+                    FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
+                }
+
                 //print("SELECTION");
                 LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
-
-                FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
 
                 // Reset/update the flags
                 _firstContact = false;
