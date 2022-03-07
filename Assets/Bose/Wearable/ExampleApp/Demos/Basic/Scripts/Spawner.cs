@@ -6,7 +6,8 @@ public class Spawner : MonoBehaviour
 {
     public GameObject MenuItemPrefab;
     public int Quantity;
-    public int Radius = 40;
+    public int Radius;
+    public int yOffsetWhenVertical = -1;
     public string[] menu_item_names = new string[] { "Music", "News", "Podcasts", "Sports"};
 
     public enum Layout
@@ -22,7 +23,8 @@ public class Spawner : MonoBehaviour
     public void CreateMenuLayout()
     {
         float ratio = 1f / Quantity;
-        float itemSize = (Radius * 2) / Quantity;
+        float itemSize = (Radius*2) / Quantity;
+        float itemSecondarySize = 50;
 
         int name_index = 0;
 
@@ -35,7 +37,7 @@ public class Spawner : MonoBehaviour
                     Vector3 pos = new Vector3(i * ratio * Radius, 0, 15);
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
 
-                    menuItemTest.transform.localScale = new Vector3(itemSize, Radius, 1);
+                    menuItemTest.transform.localScale = new Vector3(itemSize, itemSecondarySize, 1);
                     menuItemTest.name = menu_item_names[name_index];
                     name_index++;
                 }
@@ -45,10 +47,10 @@ public class Spawner : MonoBehaviour
 
                 for (int i = Quantity - 1; i >= 1 - Quantity; i -= 2)
                 {
-                    Vector3 pos = new Vector3(0, i * ratio * Radius, 15);
+                    Vector3 pos = new Vector3(0, i * ratio * Radius + yOffsetWhenVertical, 15);
                     GameObject menuItemTest = Instantiate(MenuItemPrefab, pos, transform.rotation);
 
-                    menuItemTest.transform.localScale = new Vector3(Radius, itemSize, 1);
+                    menuItemTest.transform.localScale = new Vector3(itemSecondarySize, itemSize, 1);
                     menuItemTest.name = menu_item_names[name_index];
                     name_index++;
                 }

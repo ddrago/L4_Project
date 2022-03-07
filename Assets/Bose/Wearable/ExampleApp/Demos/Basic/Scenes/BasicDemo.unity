@@ -523,7 +523,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   MenuItemPrefab: {fileID: 7349211355736870586, guid: 01d43a7c5e2c5c64fa8d879ff25269e4, type: 3}
   Quantity: 4
-  Radius: 40
+  Radius: 15
+  yOffsetWhenVertical: -1
   menu_item_names:
   - Music
   - News
