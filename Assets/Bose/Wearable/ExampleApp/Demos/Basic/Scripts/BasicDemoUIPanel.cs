@@ -18,7 +18,12 @@ namespace Bose.Wearable.Examples
 		[SerializeField]
 		private RotationMatcher _matcher;
 
+		[SerializeField]
 		public TMPro.TMP_Dropdown myDrop;
+
+		Spawner spawner;
+		
+		[SerializeField] GameObject spawnerObject;
 
 		#pragma warning restore 0649
 
@@ -35,12 +40,15 @@ namespace Bose.Wearable.Examples
 
 			// Must be registered after the above to avoid an errant call.
 			_referenceToggle.onValueChanged.AddListener(OnReferenceToggleClicked);
+
+			//Get the Spawner component to be able to access its methods
+			spawner = spawnerObject.GetComponent<Spawner>();
 		}
 
 		private void OnDestroy()
 		{
-			_referenceToggle.onValueChanged.RemoveAllListeners();
-			myDrop.onValueChanged.RemoveAllListeners();
+			//_referenceToggle.onValueChanged.RemoveAllListeners();
+			//myDrop.onValueChanged.RemoveAllListeners();
 		}
 
 		/// <summary>
@@ -71,9 +79,21 @@ namespace Bose.Wearable.Examples
 
 		public void HandleDropdown()
         {
-            if (myDrop.value == 0) print("Horizontal");
-			else if (myDrop.value == 1) print("Vertical");
-			else if(myDrop.value == 2) print("Pie");
+            if (myDrop.value == 0)
+            {
+				spawner.layout = Spawner.Layout.horizontal;
+			}
+			else if (myDrop.value == 1)
+			{
+				spawner.layout = Spawner.Layout.vertical;
+			}
+			else if(myDrop.value == 2)
+			{
+				spawner.layout = Spawner.Layout.pie;
+			}
+
+			spawner.UpdateMenu();
+
 		}
 	}
 }

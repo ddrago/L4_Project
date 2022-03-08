@@ -1090,7 +1090,7 @@ ScriptsOnlyBuild:
     className: TargetSFX
   - hash:
       serializedVersion: 2
-      Hash: 18d967fc38bb02a030d453e0ff4838ec
+      Hash: 14eec07b0ea944d31fbf28fbcdd0e176
     assemblyName: Bose.Wearable.dll
     namespaceName: Bose.Wearable.Examples
     className: BasicDemoUIPanel
