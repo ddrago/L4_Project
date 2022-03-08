@@ -18,6 +18,8 @@ namespace Bose.Wearable.Examples
 		[SerializeField]
 		private RotationMatcher _matcher;
 
+		public TMPro.TMP_Dropdown myDrop;
+
 		#pragma warning restore 0649
 
 		private const string CENTER_LABEL = "CENTER";
@@ -38,6 +40,7 @@ namespace Bose.Wearable.Examples
 		private void OnDestroy()
 		{
 			_referenceToggle.onValueChanged.RemoveAllListeners();
+			myDrop.onValueChanged.RemoveAllListeners();
 		}
 
 		/// <summary>
@@ -64,6 +67,13 @@ namespace Bose.Wearable.Examples
 				default:
 					throw new ArgumentOutOfRangeException("ReferenceMode", _matcher.ReferenceMode, null);
 			}
+		}
+
+		public void HandleDropdown()
+        {
+            if (myDrop.value == 0) print("Horizontal");
+			else if (myDrop.value == 1) print("Vertical");
+			else if(myDrop.value == 2) print("Pie");
 		}
 	}
 }
