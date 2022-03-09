@@ -20,7 +20,8 @@ public class Selector : MonoBehaviour
     private static string _firstContactName;
 
     //The name of the logging file - MODIFY FOR EACH PARTICIPANT
-    private static string filename = "log.csv";
+    private static string baseFileName = "log.csv";
+    private static string filename;
 
     private static Coach coach;
 
@@ -28,6 +29,8 @@ public class Selector : MonoBehaviour
     private static Boolean isExperimentStarted;
     private static Boolean isWelcomeAudioDone;
 
+    //This piece of information is useful to give correct names to the log files
+    public static string currentLayout = "horizontal";
     public void Select()
     {
         // Deal with the user's gaze
@@ -72,6 +75,7 @@ public class Selector : MonoBehaviour
 
     public static void Press()
     {
+        Debug.Log("Press");
         //The experiment starts when the first press is done!
         if (isExperimentStarted == false)
         {
@@ -97,22 +101,35 @@ public class Selector : MonoBehaviour
         }
     }
 
-    public static void WriteString(string log)
+    public void restart()
     {
-        string path = "C:/Users/Edune/Desktop/STUDY2021/IND_PROJ/Testing/Unity_testing/LoggingFolder" + "/test.txt";
-        //Write some text to the test.txt file
-        StreamWriter writer = new StreamWriter(path, true);
-        writer.WriteLine(log);
-        writer.Close();
-        StreamReader reader = new StreamReader(path);
-        //Print the text from the file
-        Debug.Log(reader.ReadToEnd());
-        reader.Close();
+        _firstContact = true;
+        _firstContactName = "";
+
+        //Set the path to the logging file as the persistent data folders in the android system
+        InitLogging();
+
+        _firstContact = true;
+
+        //Set up the coach
+        coach = new Coach(1);
+
+        //The experiment has not started yet
+        isExperimentStarted = false;
+        isWelcomeAudioDone = false;
+    }
+
+    internal void updateLogFilename(Spawner.Layout layout)
+    {
+        //update filename
+        currentLayout = layout.ToString();
+        baseFileName = currentLayout + "_log.csv";
+        print(baseFileName);
     }
 
     public static void InitLogging()
     {
-        filename = Application.persistentDataPath + "/" + filename;
+        filename = Application.persistentDataPath + "/" + baseFileName;
 
         System.IO.FileInfo theSourceFile = new System.IO.FileInfo(filename);
         //System.IO.File.WriteAllText(filename, "[TEST]" + filename);
@@ -120,12 +137,12 @@ public class Selector : MonoBehaviour
             "InteractionType,Time,TimeMS,Item",
             "[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A"
         });
-        if (System.IO.File.Exists(filename))
+/*        if (System.IO.File.Exists(filename))
         {
             System.IO.StreamReader reader = theSourceFile.OpenText();
             string text = reader.ReadLine();
             print(text);
-        }
+        }*/
     }
 
     public static void LogOnCSV(string interactionType, string time, long timeMS, string item)
@@ -170,7 +187,7 @@ public class Selector : MonoBehaviour
         private static float coachCountdownDuration;
 
         public static List<string> instructions_to_give = new List<string>(new string[] { "Music", "News", "Podcasts", "Sports", "Music", "News", "Podcasts", "Sports" });
-        public static List<string> instructions = new List<string>();
+        public static List<string> instructions;
 
         public static System.Random rnd = new System.Random();
 
@@ -183,15 +200,19 @@ public class Selector : MonoBehaviour
             countdown = coachCountdownDuration;
             coachCountdownDuration = countdownDuration;
 
-            instructions = instructions_to_give.OrderBy(a => rnd.Next()).ToList();
-            //print(string.Join(",", instructions.ToArray()));
+            instructions = new List<string>(instructions_to_give);
+            instructions = instructions.OrderBy(a => rnd.Next()).ToList();
+            Debug.Log(string.Join(",", instructions.ToArray()));
 
+            instruction_log_filename = currentLayout.ToString() + "_" + "instructions.txt";
             LogInstructions();
         }
 
         public void LogInstructions()
         {
+            //update filename
             instruction_log_filename = Application.persistentDataPath + "/" + instruction_log_filename;
+            Debug.Log(instruction_log_filename);
 
             System.IO.FileInfo theSourceFile = new System.IO.FileInfo(instruction_log_filename);
             System.IO.File.WriteAllText(instruction_log_filename, string.Join(",", instructions.ToArray()));

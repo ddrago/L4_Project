@@ -22,10 +22,12 @@ namespace Bose.Wearable.Examples
 		public TMPro.TMP_Dropdown myDrop;
 
 		Spawner spawner;
-		
 		[SerializeField] GameObject spawnerObject;
 
-		#pragma warning restore 0649
+		Selector selector;
+		[SerializeField] GameObject selectorObject;
+
+#pragma warning restore 0649
 
 		private const string CENTER_LABEL = "CENTER";
 		private const string RESET_LABEL = "RESET";
@@ -43,6 +45,7 @@ namespace Bose.Wearable.Examples
 
 			//Get the Spawner component to be able to access its methods
 			spawner = spawnerObject.GetComponent<Spawner>();
+			selector = selectorObject.GetComponent<Selector>();
 		}
 
 		private void OnDestroy()
@@ -82,16 +85,19 @@ namespace Bose.Wearable.Examples
             if (myDrop.value == 0)
             {
 				spawner.layout = Spawner.Layout.horizontal;
+				selector.updateLogFilename(Spawner.Layout.horizontal);
 			}
 			else if (myDrop.value == 1)
 			{
 				spawner.layout = Spawner.Layout.vertical;
+				selector.updateLogFilename(Spawner.Layout.vertical);
 			}
 			else if(myDrop.value == 2)
 			{
 				spawner.layout = Spawner.Layout.pie;
+				selector.updateLogFilename(Spawner.Layout.pie);
 			}
-
+			selector.restart();
 			spawner.UpdateMenu();
 
 		}
