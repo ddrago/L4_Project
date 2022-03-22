@@ -126,12 +126,12 @@ public class Selector : MonoBehaviour
     {
         //update the browing and selection data filename
         currentLayout = layout.ToString();
-        baseFileName = currentLayout + "_log.csv";
-        print(baseFileName);
+        //baseFileName = currentLayout + "_log.csv";
+        //print(baseFileName);
 
         //update the gaze path directional data filename
-        currentLayout = layout.ToString();
-        baseGazePathFilename = currentLayout + "gazepath.csv";
+        //currentLayout = layout.ToString();
+        //baseGazePathFilename = currentLayout + "gazepath.csv";
     }
 
     public static void InitLogging()
@@ -146,7 +146,7 @@ public class Selector : MonoBehaviour
         // Log the gaze path directional data
         gazePathFilename = Application.persistentDataPath + "/" + currentLayout + "_" + baseGazePathFilename;
         System.IO.File.WriteAllLines(gazePathFilename, new string[] {
-            "X, Y, Z"
+            "X,Y,Z,timestamp,item_hit"
         });
     }
 
@@ -172,7 +172,7 @@ public class Selector : MonoBehaviour
         {
             Debug.Log(_hitInfo.point.ToString());
             System.IO.File.AppendAllLines(gazePathFilename, new string[] {
-                _hitInfo.point.x.ToString() + "," +  _hitInfo.point.y.ToString() + "," +  _hitInfo.point.z.ToString()
+                _hitInfo.point.x.ToString() + "," +  _hitInfo.point.y.ToString() + "," +  _hitInfo.point.z.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + _hitInfo.collider.gameObject.name
             });
         }
         /*else
