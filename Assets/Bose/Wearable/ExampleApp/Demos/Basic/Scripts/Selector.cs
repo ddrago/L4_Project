@@ -19,9 +19,11 @@ public class Selector : MonoBehaviour
     private static bool _firstContact;
     private static string _firstContactName;
 
-    //The name of the logging file - MODIFY FOR EACH PARTICIPANT
+    //The name of the logging files - MODIFY FOR EACH PARTICIPANT
     private static string baseFileName = "log.csv";
     private static string filename;
+    private static string baseGazePathFilename = "gazepath.csv";
+    private static string gazePathFilename;
 
     private static Coach coach;
 
@@ -31,6 +33,8 @@ public class Selector : MonoBehaviour
 
     //This piece of information is useful to give correct names to the log files
     public static string currentLayout = "horizontal";
+
+    //This method is called at every update. It checks whether the user's gaze is hovering over any item and acts accordingly
     public void Select()
     {
         // Deal with the user's gaze
@@ -57,8 +61,7 @@ public class Selector : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
                 }
 
-                print(coach.next_instruction);
-                LogOnCSV("[HOVER]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                LogOnCSV("[HOVER]", _hitInfo.collider.gameObject.name);
 
                 // Reset/update the flags
                 _firstContact = false;
@@ -81,7 +84,7 @@ public class Selector : MonoBehaviour
         {
             isExperimentStarted = true;
             FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-            LogOnCSV("[STARTING PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+            LogOnCSV("[STARTING PRESS]", "N/A");
             coach.startCoachCountdown = true;
 
             return;
@@ -90,14 +93,14 @@ public class Selector : MonoBehaviour
         if (Physics.Raycast(_ray, out _hitInfo, 100))
         {
             FindObjectOfType<AudioManager>().Play("MenuButtonPress");
-            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+            LogOnCSV("[PRESS]", _hitInfo.collider.gameObject.name);
             //print("PRESS");
 
             coach.startCoachCountdown = true;
         }
         else
         {
-            LogOnCSV("[PRESS]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+            LogOnCSV("[PRESS]", "N/A");
         }
     }
 
@@ -121,35 +124,61 @@ public class Selector : MonoBehaviour
 
     internal void updateLogFilename(Spawner.Layout layout)
     {
-        //update filename
+        //update the browing and selection data filename
         currentLayout = layout.ToString();
         baseFileName = currentLayout + "_log.csv";
         print(baseFileName);
+
+        //update the gaze path directional data filename
+        currentLayout = layout.ToString();
+        baseGazePathFilename = currentLayout + "gazepath.csv";
     }
 
     public static void InitLogging()
     {
-        filename = Application.persistentDataPath + "/" + baseFileName;
-
-        System.IO.FileInfo theSourceFile = new System.IO.FileInfo(filename);
-        //System.IO.File.WriteAllText(filename, "[TEST]" + filename);
+        // Log the browing and selection data
+        filename = Application.persistentDataPath + "/" + currentLayout + "_" + baseFileName;
         System.IO.File.WriteAllLines(filename, new string[] {
-            "InteractionType,Time,TimeMS,Item",
-            "[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A"
+            "InteractionType,Time,TimeMS,Item,isCorrectItem",
+            "[START]" + "," + DateTime.Now.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + "N/A" + "," + "N/A"
         });
-/*        if (System.IO.File.Exists(filename))
-        {
-            System.IO.StreamReader reader = theSourceFile.OpenText();
-            string text = reader.ReadLine();
-            print(text);
-        }*/
+
+        // Log the gaze path directional data
+        gazePathFilename = Application.persistentDataPath + "/" + currentLayout + "_" + baseGazePathFilename;
+        System.IO.File.WriteAllLines(gazePathFilename, new string[] {
+            "X, Y, Z"
+        });
     }
 
-    public static void LogOnCSV(string interactionType, string time, long timeMS, string item)
+    public static void LogOnCSV(string interactionType, string item)
     {
+        bool isCorrectItem = false;
+        if (coach is not null)
+        {
+            if(coach.next_instruction is not null)
+            {
+                isCorrectItem = coach.next_instruction.Equals(item);
+            }
+        }
+
         System.IO.File.AppendAllLines(filename, new string[] {
-            interactionType + "," + time + "," + (timeMS).ToString() + "," + item
+            interactionType + "," + DateTime.Now.ToString() + "," + (DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond).ToString() + "," + item + "," + isCorrectItem
         });
+    }
+
+    public static void LogGazePath()
+    {
+        if (Physics.Raycast(_ray, out _hitInfo, 100))
+        {
+            Debug.Log(_hitInfo.point.ToString());
+            System.IO.File.AppendAllLines(gazePathFilename, new string[] {
+                _hitInfo.point.x.ToString() + "," +  _hitInfo.point.y.ToString() + "," +  _hitInfo.point.z.ToString()
+            });
+        }
+        /*else
+        {
+            LogOnCSV("[PRESS]", "N/A");
+        }*/
     }
 
     private void Awake()
@@ -174,6 +203,8 @@ public class Selector : MonoBehaviour
     void Update()
     {
         Select();
+
+        LogGazePath();
 
         coach.afterCountdownCoach();
     }
@@ -272,7 +303,7 @@ public class Selector : MonoBehaviour
                     else
                     {
                         FindObjectOfType<AudioManager>().Play("ExperimentEnd");
-                        LogOnCSV("[END]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, "N/A");
+                        LogOnCSV("[END]", "N/A");
                         Debug.Log("End of experiment!");
                     }
                     countdown = coachCountdownDuration;
