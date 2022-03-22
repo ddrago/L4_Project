@@ -57,8 +57,8 @@ public class Selector : MonoBehaviour
                     FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
                 }
 
-                //print("SELECTION");
-                LogOnCSV("[SELECTION]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
+                print(coach.next_instruction);
+                LogOnCSV("[HOVER]", DateTime.Now.ToString(), DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond, _hitInfo.collider.gameObject.name);
 
                 // Reset/update the flags
                 _firstContact = false;
@@ -188,6 +188,7 @@ public class Selector : MonoBehaviour
 
         public static List<string> instructions_to_give = new List<string>(new string[] { "Music", "News", "Podcasts", "Sports", "Music", "News", "Podcasts", "Sports" });
         public static List<string> instructions;
+        public string next_instruction;
 
         public static System.Random rnd = new System.Random();
 
@@ -203,6 +204,7 @@ public class Selector : MonoBehaviour
             instructions = new List<string>(instructions_to_give);
             instructions = instructions.OrderBy(a => rnd.Next()).ToList();
             Debug.Log(string.Join(",", instructions.ToArray()));
+            next_instruction = null;
 
             instruction_log_filename = currentLayout.ToString() + "_" + "instructions.txt";
             LogInstructions();
@@ -250,7 +252,7 @@ public class Selector : MonoBehaviour
                 }
                 else
                 {
-                    string next_instruction = Give_instruction();
+                    next_instruction = Give_instruction();
                     if (next_instruction is not null)
                     {
                         if (isWelcomeAudioDone)
