@@ -55,7 +55,11 @@ public class Selector : MonoBehaviour
 
                 // There is an object positioned at the center of a participant's point of view that should 
                 // Allow to just look without being bombarded with feedback.
-                if (_hitInfo.collider.gameObject.name != "NoFeedbackZone")
+                if (_hitInfo.collider.gameObject.name == "NoFeedbackZone")
+                {
+                    FindObjectOfType<AudioManager>().Play("NoMenuSelection");
+                }
+                else
                 {
                     FindObjectOfType<AudioManager>().Play("MenuSelectionChange");
                     FindObjectOfType<AudioManager>().Play(_hitInfo.collider.gameObject.name);
@@ -71,6 +75,10 @@ public class Selector : MonoBehaviour
         }
         else
         {
+            if (!_firstContact)
+            {
+                FindObjectOfType<AudioManager>().Play("NoMenuSelection");
+            }
             Debug.DrawLine(_ray.origin, _ray.origin + _ray.direction * 100, Color.red);
             _firstContact = true;
         }
@@ -126,12 +134,6 @@ public class Selector : MonoBehaviour
     {
         //update the browing and selection data filename
         currentLayout = layout.ToString();
-        //baseFileName = currentLayout + "_log.csv";
-        //print(baseFileName);
-
-        //update the gaze path directional data filename
-        //currentLayout = layout.ToString();
-        //baseGazePathFilename = currentLayout + "gazepath.csv";
     }
 
     public static void InitLogging()
@@ -175,10 +177,6 @@ public class Selector : MonoBehaviour
                 _hitInfo.point.x.ToString() + "," +  _hitInfo.point.y.ToString() + "," +  _hitInfo.point.z.ToString() + "," + DateTime.Now.Ticks / TimeSpan.TicksPerMillisecond + "," + _hitInfo.collider.gameObject.name
             });
         }
-        /*else
-        {
-            LogOnCSV("[PRESS]", "N/A");
-        }*/
     }
 
     private void Awake()
